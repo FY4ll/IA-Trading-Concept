@@ -113,6 +113,15 @@ calendar). The simulator expects a `core/ftmo/conditions_ftmo.json` produced fro
 
 Most documentation and code comments are in **French**. Translations are welcome.
 
+## Taking over the project
+
+Research stopped on 2026-10-20. Everything needed to continue it without the author is in
+[`docs/HANDOVER.md`](docs/HANDOVER.md): what is active vs archived, data setup, how to run a study, known issues,
+open threads and a French → English glossary. Study template: [`docs/TEMPLATE_PLAN_FIGE.md`](docs/TEMPLATE_PLAN_FIGE.md).
+
+To simply test a strategy on your own trade history, use the standalone judge
+[ProveIt](https://github.com/FY4ll/ProveIt).
+
 ## Contributing
 
 Contributions are welcome, especially new hypotheses run through the protocol, data download scripts, and

@@ -81,6 +81,15 @@ spectaculaire), frais de nuit oubliés sur 36 % des nuits, stop du jumeau décle
 | [`docs/`](docs/) | Audit, architecture, historique, protocole, règles FTMO, sources des données |
 | `research_notes/`, `reports/` | Notes de recherche bibliographique |
 
+## Reprendre le projet
+
+La recherche s'est arrêtée le 20/10/2026. Tout ce qu'il faut pour la poursuivre sans l'auteur est dans
+[`docs/HANDOVER.md`](docs/HANDOVER.md) (en anglais) : ce qui est actif ou archivé, la mise en place des données,
+comment lancer une étude, les problèmes connus, les pistes ouvertes et un glossaire. Modèle d'étude :
+[`docs/TEMPLATE_PLAN_FIGE.md`](docs/TEMPLATE_PLAN_FIGE.md).
+
+Pour simplement tester une stratégie sur ton propre historique de trades : [ProveIt](https://github.com/FY4ll/ProveIt).
+
 ## Installation et tests
 
 Environnement d'origine : Windows, Python 3.11, PyTorch CUDA, GTX 1060 6 Go, 16 Go de RAM.
