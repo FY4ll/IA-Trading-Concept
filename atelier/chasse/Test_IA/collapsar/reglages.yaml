@@ -1,0 +1,18 @@
+# Réglages de COLLAPSAR (lus au réveil du cœur ; le changer = redémarrer le cœur, l'arbre reprend où il en était).
+battement_minutes: 15        # durée d'entraînement d'une branche à chaque battement
+# 14/10/2026 : arbre 3, « vision du trader » (évaluer n'importe quel coup : sens, stop, objectif libres) ;
+# « racines » = l'ancienne question sens / ampleur / agitation (arbre 2, archivé dans vie/arbre2_14oct)
+vision: trader
+# 14/10 : taille du cerveau à vision de trader (1 = 720 000 connexions ; 0,35 = 355 000) : le petit récite moins par
+# cœur ses années apprises (expérience regarder/experience_par_coeur.py, vie/experience_par_coeur_*.json)
+largeur_trader: 0.35
+
+arbre:
+  places: 4                  # branches vivantes en même temps (taille de la machine)
+  bourgeon_tous: 2           # battements de l'arbre entre deux bourgeons
+  jeunesse: 3                # une jeune branche reçoit au moins 20 % de sève pendant ses 3 premiers battements
+  seve_jeune: 0.2
+  coupe_apres: 3             # battements sans progrès avant de pouvoir être coupée...
+  coupe_ecart: 0.5           # ... si elle reste à plus de 0,5 point de lien prévu/réel derrière la cime
+  fusion_tous: 6             # battements de l'arbre entre deux essais de fusion
+  fusion_maturite: 3         # battements minimum de chaque branche avant de fusionner

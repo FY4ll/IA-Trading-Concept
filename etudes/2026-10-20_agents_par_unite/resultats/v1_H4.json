@@ -1,0 +1,67 @@
+{
+ "style": "H4",
+ "generation": 167,
+ "jumeaux": 4,
+ "fenetre_debut": "2004-06-25",
+ "metrics_meta": {
+  "total_return": 1.401325107784377,
+  "sharpe": 4.282225084559105,
+  "max_drawdown": 0.19505546550408107,
+  "win_rate": 0.4483870967741935,
+  "profit_factor": 1.9770941181468273,
+  "n_trades": 310,
+  "stress_windows": []
+ },
+ "periodes": [
+  {
+   "periode": "déjà vue : sa fenêtre (apprentissage 70 % + validation 30 %)",
+   "debut": "2010-01-01",
+   "fin": "2026-09-17",
+   "mois": 201,
+   "agent_pct_mois": 0.9652788633982328,
+   "jumeaux_pct_mois": [
+    0.944202048006716,
+    0.9156026154799711,
+    0.8555221990711585,
+    0.9763251920936145
+   ],
+   "trades": 253,
+   "part_achats_pct": 11.067193675889328,
+   "or_variation_pct": 295.79002978494725,
+   "comparaison": {
+    "avantage": 0.04236584973536799,
+    "incertitude": 0.06375506263258135,
+    "force": 0.664509577529885,
+    "gain_ia": 0.9652788633982328,
+    "gain_jumeau": 0.9229130136628649,
+    "mesures": 201,
+    "net": false
+   }
+  },
+  {
+   "periode": "jamais vue : après le 17/09/2026",
+   "debut": "2026-09-17",
+   "fin": "2026-10-13",
+   "mois": 2,
+   "agent_pct_mois": 0.9744962377910671,
+   "jumeaux_pct_mois": [
+    2.229586142395823,
+    2.2894848090139366,
+    2.879999381018361,
+    -0.14312239425693374
+   ],
+   "trades": 16,
+   "part_achats_pct": 0.0,
+   "or_variation_pct": -2.086534288830766,
+   "comparaison": {
+    "avantage": -0.8394907467517296,
+    "incertitude": 1.1191445177399768,
+    "force": -0.7501182675201004,
+    "gain_ia": 0.9744962377910671,
+    "gain_jumeau": 1.8139869845427967,
+    "mesures": 2,
+    "net": false
+   }
+  }
+ ]
+}

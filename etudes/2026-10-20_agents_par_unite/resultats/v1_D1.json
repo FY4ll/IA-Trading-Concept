@@ -1,0 +1,86 @@
+{
+ "style": "D1",
+ "generation": 204,
+ "jumeaux": 4,
+ "fenetre_debut": "2004-09-03",
+ "metrics_meta": {
+  "total_return": 0.43247257185013294,
+  "sharpe": 7.456048439499159,
+  "max_drawdown": 0.19165238677577515,
+  "win_rate": 0.10493827160493827,
+  "profit_factor": 2.6661031843827687,
+  "n_trades": 162,
+  "stress_windows": [
+   {
+    "total_return": 2.3613956340102886,
+    "sharpe": 6.1031530975162,
+    "max_drawdown": 0.19165238677577515,
+    "win_rate": 0.11333333333333333,
+    "profit_factor": 2.935867749681633,
+    "n_trades": 150,
+    "stress": "block_bootstrap"
+   },
+   {
+    "total_return": 3.194846543437837,
+    "sharpe": 8.447865955375335,
+    "max_drawdown": 0.17334180230127338,
+    "win_rate": 0.14285714285714285,
+    "profit_factor": 4.558873004839609,
+    "n_trades": 105,
+    "stress": "high_volatility"
+   }
+  ]
+ },
+ "periodes": [
+  {
+   "periode": "déjà vue : sa fenêtre (apprentissage 70 % + validation 30 %)",
+   "debut": "2010-01-01",
+   "fin": "2026-09-17",
+   "mois": 200,
+   "agent_pct_mois": 0.7734430662016395,
+   "jumeaux_pct_mois": [
+    0.6633974917506101,
+    0.7142732238149392,
+    0.6290714654070986,
+    0.645530064163029
+   ],
+   "trades": 23,
+   "part_achats_pct": 78.26086956521739,
+   "or_variation_pct": 283.18273047589315,
+   "comparaison": {
+    "avantage": 0.11037500491772016,
+    "incertitude": 0.04273632389369715,
+    "force": 2.5826976880900725,
+    "gain_ia": 0.7734430662016395,
+    "gain_jumeau": 0.6630680612839192,
+    "mesures": 200,
+    "net": true
+   }
+  },
+  {
+   "periode": "jamais vue : après le 17/09/2026",
+   "debut": "2026-09-17",
+   "fin": "2026-10-13",
+   "mois": 2,
+   "agent_pct_mois": -0.6013068735700677,
+   "jumeaux_pct_mois": [
+    -0.6013068735700733,
+    -0.6013068735700733,
+    -0.6013068735700733,
+    -0.6013068735700677
+   ],
+   "trades": 0,
+   "part_achats_pct": null,
+   "or_variation_pct": -2.086534288830766,
+   "comparaison": {
+    "avantage": 4.218847493575595e-15,
+    "incertitude": 4.218847493575595e-15,
+    "force": 1.0,
+    "gain_ia": -0.6013068735700677,
+    "gain_jumeau": -0.601306873570072,
+    "mesures": 2,
+    "net": false
+   }
+  }
+ ]
+}

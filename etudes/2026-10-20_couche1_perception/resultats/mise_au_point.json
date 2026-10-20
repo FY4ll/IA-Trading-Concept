@@ -1,0 +1,74 @@
+{
+ "comptes_toute_histoire": {
+  "D1": {
+   "zones": 313,
+   "confirmees_volume": 121,
+   "premier_contact_reagi": 28,
+   "bloquees_fvg": 10,
+   "sans_zone_opposee": 6,
+   "avis": 12,
+   "executes": 11
+  },
+  "H4": {
+   "zones": 1541,
+   "confirmees_volume": 610,
+   "premier_contact_reagi": 94,
+   "bloquees_fvg": 36,
+   "sans_zone_opposee": 32,
+   "avis": 26,
+   "executes": 24
+  },
+  "H1": {
+   "zones": 5433,
+   "confirmees_volume": 2163,
+   "premier_contact_reagi": 383,
+   "bloquees_fvg": 113,
+   "sans_zone_opposee": 62,
+   "avis": 208,
+   "executes": 176
+  },
+  "M15": {
+   "zones": 22201,
+   "confirmees_volume": 9462,
+   "premier_contact_reagi": 1755,
+   "bloquees_fvg": 553,
+   "sans_zone_opposee": 141,
+   "avis": 1061,
+   "executes": 958
+  }
+ },
+ "plausibilite_2010_2017": {
+  "D1": {
+   "trades": 6,
+   "achats_pct": 50.0,
+   "risque_median_pct_prix": 0.7016861291604406,
+   "objectif_median_R": 11.102962419581456,
+   "cout_median_R": 0.054906818354118064,
+   "attente_mediane_h": 158.75
+  },
+  "H4": {
+   "trades": 9,
+   "achats_pct": 22.22222222222222,
+   "risque_median_pct_prix": 0.23723568849924148,
+   "objectif_median_R": 29.65162446133735,
+   "cout_median_R": 0.1632226256093581,
+   "attente_mediane_h": 11.5
+  },
+  "H1": {
+   "trades": 89,
+   "achats_pct": 38.20224719101123,
+   "risque_median_pct_prix": 0.14416424304191935,
+   "objectif_median_R": 29.27754137115702,
+   "cout_median_R": 0.25638173610176235,
+   "attente_mediane_h": 6.25
+  },
+  "M15": {
+   "trades": 375,
+   "achats_pct": 51.46666666666667,
+   "risque_median_pct_prix": 0.060536797172242744,
+   "objectif_median_R": 37.74147414741431,
+   "cout_median_R": 0.5937540964501631,
+   "attente_mediane_h": 1.25
+  }
+ }
+}

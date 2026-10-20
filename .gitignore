@@ -1,0 +1,62 @@
+# Test_IA — règles du dépôt (20/10/2026)
+# Le dépôt garde le CODE, la DOCUMENTATION et les RAPPORTS ; jamais les données, modèles, états vivants ni clés.
+# Principe : tout est ignoré, puis on autorise seulement les fichiers texte utiles.
+
+*
+!*/
+!.gitignore
+!LICENSE
+!*.py
+!*.md
+!*.yaml
+!*.yml
+!*.ps1
+!*.pine
+!*.toml
+!*.cfg
+!*.ini
+!requirements*.txt
+
+# environnements Python et caches
+venv_gpu/
+**/venv/
+**/site-packages/
+**/__pycache__/
+.pytest_cache/
+**/node_modules/
+
+# données de marché et états vivants (sur disque seulement)
+data/**
+!data/*.md
+**/models/
+**/logs/
+graphify-out/
+**/graphify-out/
+
+# état vivant de COLLAPSAR : seuls les rapports (.md) sont gardés
+collapsar/vie/**
+!collapsar/vie/**/
+!collapsar/vie/**/*.md
+collapsar/vie/stonkfly/
+archive/*/vie/**
+!archive/*/vie/**/
+!archive/*/vie/**/*.md
+
+# core : les conditions FTMO mesurées (JSON) font partie du code
+!core/**/*.json
+# études : résultats chiffrés (JSON) gardés, journaux et courbes non
+!etudes/**/resultats/*.json
+# registre unique et fichiers du replay manuel (CSV écrits à la main)
+!etudes/REGISTRE_IDEES.csv
+!etudes/replay_manuel/*.csv
+
+# copies de sauvegarde et essais (l'historique git les remplace) — après le bloc ci-dessus, qui les rouvrirait
+atelier/code_stage/
+**/sauvegardes/
+**/code_avant/
+**/essais/
+
+# fichiers contenant une clé (FRED) : jamais dans git
+**/run_config_A*.yaml
+**/config/autonomous.yaml
+.env

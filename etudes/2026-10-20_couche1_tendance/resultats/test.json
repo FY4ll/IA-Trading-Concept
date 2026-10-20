@@ -1,0 +1,1110 @@
+{
+ "marches": {
+  "XAUUSD": {
+   "nom": "or",
+   "mesures": {
+    "acheteur": {
+     "gain_pct_mois": 1.3291953935513665,
+     "volatilite_an_pct": 35.06890137984959,
+     "gain_sur_vol": 0.45482875411036916,
+     "pire_baisse_pct": 123.43517530306673,
+     "pire_jour_pct": -50.08864555129852,
+     "jours_sous_5pct": 104,
+     "trades_an": 0.0,
+     "challenge": {
+      "reussi": 19.0,
+      "mur": 21.0,
+      "inactivite": 60.0,
+      "non_conclu": 0.0,
+      "departs": 105
+     }
+    },
+    "1m": {
+     "gain_pct_mois": -0.14090624257822573,
+     "volatilite_an_pct": 11.604512112985649,
+     "gain_sur_vol": -0.14570840156619685,
+     "pire_baisse_pct": 41.43296717725317,
+     "pire_jour_pct": -6.298227785655901,
+     "jours_sous_5pct": 3,
+     "trades_an": 24.95780031201248,
+     "challenge": {
+      "reussi": 2.9,
+      "mur": 7.6,
+      "inactivite": 87.6,
+      "non_conclu": 1.9,
+      "departs": 105
+     }
+    },
+    "3m": {
+     "gain_pct_mois": 0.38243419816024965,
+     "volatilite_an_pct": 12.886127383964062,
+     "gain_sur_vol": 0.35613572962455464,
+     "pire_baisse_pct": 30.225310088020223,
+     "pire_jour_pct": -13.357088964916736,
+     "jours_sous_5pct": 11,
+     "trades_an": 10.256630265210608,
+     "challenge": {
+      "reussi": 2.9,
+      "mur": 4.8,
+      "inactivite": 90.5,
+      "non_conclu": 1.9,
+      "departs": 105
+     }
+    },
+    "6m": {
+     "gain_pct_mois": 0.5433692737944936,
+     "volatilite_an_pct": 19.81869944700235,
+     "gain_sur_vol": 0.32900399458452667,
+     "pire_baisse_pct": 72.72221464664722,
+     "pire_jour_pct": -29.173202880076655,
+     "jours_sous_5pct": 34,
+     "trades_an": 6.951716068642745,
+     "challenge": {
+      "reussi": 6.7,
+      "mur": 10.5,
+      "inactivite": 81.9,
+      "non_conclu": 1.0,
+      "departs": 105
+     }
+    },
+    "12m": {
+     "gain_pct_mois": 0.7741839790868263,
+     "volatilite_an_pct": 31.638809312899028,
+     "gain_sur_vol": 0.29363329249101455,
+     "pire_baisse_pct": 106.5073378377114,
+     "pire_jour_pct": -43.21951405235281,
+     "jours_sous_5pct": 83,
+     "trades_an": 6.153978159126365,
+     "challenge": {
+      "reussi": 13.3,
+      "mur": 20.0,
+      "inactivite": 66.7,
+      "non_conclu": 0.0,
+      "departs": 105
+     }
+    }
+   },
+   "infos": {
+    "acheteur": {
+     "en_position_pct": 99.95964204246359
+    },
+    "1m": {
+     "en_position_pct": 99.87892612739077,
+     "achat_pct": 57.43398745629908
+    },
+    "3m": {
+     "en_position_pct": 99.78592735567644,
+     "achat_pct": 66.07054934233663
+    },
+    "6m": {
+     "en_position_pct": 99.89296367783821,
+     "achat_pct": 72.95403045899278
+    },
+    "12m": {
+     "en_position_pct": 99.77715388664679,
+     "achat_pct": 74.75335455392786
+    }
+   },
+   "comparaisons": {
+    "1m": {
+     "pile_ou_face_pct_mois": -0.2607374530832796,
+     "contre_pile": {
+      "avantage": 0.11983121050505391,
+      "incertitude": 0.2915000020664002,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -1.4701016361295922,
+      "incertitude": 0.8093762946980063,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.5807450581122215,
+      "incertitude": 0.34558886826926355,
+      "bat": false
+     }
+    },
+    "3m": {
+     "pile_ou_face_pct_mois": -0.22546197885228347,
+     "contre_pile": {
+      "avantage": 0.6078961770125332,
+      "incertitude": 0.24046950071747497,
+      "bat": true
+     },
+     "contre_acheteur": {
+      "avantage": -0.946761195391117,
+      "incertitude": 0.822422559540481,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.10598090711940743,
+      "incertitude": 0.35027177545892485,
+      "bat": false
+     }
+    },
+    "6m": {
+     "pile_ou_face_pct_mois": -0.11728968960199074,
+     "contre_pile": {
+      "avantage": 0.6606589633964844,
+      "incertitude": 0.37355886277682937,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -0.7858261197568731,
+      "incertitude": 0.5405114672132341,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.20780692433616807,
+      "incertitude": 0.31249356082466156,
+      "bat": false
+     }
+    },
+    "12m": {
+     "pile_ou_face_pct_mois": 0.11076728483394482,
+     "contre_pile": {
+      "avantage": 0.6634166942528815,
+      "incertitude": 0.5223120366418137,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -0.55501141446454,
+      "incertitude": 0.36212932137171316,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.4250027060232912,
+      "incertitude": 0.33638510614597056,
+      "bat": false
+     }
+    }
+   }
+  },
+  "XAGUSD": {
+   "nom": "argent",
+   "mesures": {
+    "acheteur": {
+     "gain_pct_mois": 0.3377598040782753,
+     "volatilite_an_pct": 27.06485356740809,
+     "gain_sur_vol": 0.14975575754897597,
+     "pire_baisse_pct": 131.5109593868215,
+     "pire_jour_pct": -82.44979901691029,
+     "jours_sous_5pct": 72,
+     "trades_an": 0.3417810355583282,
+     "challenge": {
+      "reussi": 7.6,
+      "mur": 13.3,
+      "inactivite": 78.1,
+      "non_conclu": 1.0,
+      "departs": 105
+     }
+    },
+    "1m": {
+     "gain_pct_mois": -0.3146406260814092,
+     "volatilite_an_pct": 13.023362499333778,
+     "gain_sur_vol": -0.2899164876329027,
+     "pire_baisse_pct": 58.10441593033876,
+     "pire_jour_pct": -24.964994838645477,
+     "jours_sous_5pct": 7,
+     "trades_an": 25.74750467872739,
+     "challenge": {
+      "reussi": 8.6,
+      "mur": 12.4,
+      "inactivite": 77.1,
+      "non_conclu": 1.9,
+      "departs": 105
+     }
+    },
+    "3m": {
+     "gain_pct_mois": -0.5591103796240401,
+     "volatilite_an_pct": 16.43685982151674,
+     "gain_sur_vol": -0.4081877334444144,
+     "pire_baisse_pct": 91.01795438081281,
+     "pire_jour_pct": -42.10724564998964,
+     "jours_sous_5pct": 17,
+     "trades_an": 17.544759825327514,
+     "challenge": {
+      "reussi": 2.9,
+      "mur": 15.2,
+      "inactivite": 80.0,
+      "non_conclu": 1.9,
+      "departs": 105
+     }
+    },
+    "6m": {
+     "gain_pct_mois": 0.08083676171731889,
+     "volatilite_an_pct": 16.249493121946863,
+     "gain_sur_vol": 0.059696701511117986,
+     "pire_baisse_pct": 61.11224479685726,
+     "pire_jour_pct": -42.91355779400829,
+     "jours_sous_5pct": 22,
+     "trades_an": 10.481285090455398,
+     "challenge": {
+      "reussi": 7.6,
+      "mur": 8.6,
+      "inactivite": 82.9,
+      "non_conclu": 1.0,
+      "departs": 105
+     }
+    },
+    "12m": {
+     "gain_pct_mois": 0.15507382755500682,
+     "volatilite_an_pct": 25.768802513163152,
+     "gain_sur_vol": 0.07221468400440838,
+     "pire_baisse_pct": 126.52105886018532,
+     "pire_jour_pct": -79.32141870964328,
+     "jours_sous_5pct": 64,
+     "trades_an": 7.177401746724891,
+     "challenge": {
+      "reussi": 6.7,
+      "mur": 12.4,
+      "inactivite": 80.0,
+      "non_conclu": 1.0,
+      "departs": 105
+     }
+    }
+   },
+   "infos": {
+    "acheteur": {
+     "en_position_pct": 99.91002837566613
+    },
+    "1m": {
+     "en_position_pct": 99.88407502249291,
+     "achat_pct": 53.363127717438374
+    },
+    "3m": {
+     "en_position_pct": 99.70067132673542,
+     "achat_pct": 55.57329538552314
+    },
+    "6m": {
+     "en_position_pct": 99.82870786905669,
+     "achat_pct": 58.337521881553634
+    },
+    "12m": {
+     "en_position_pct": 99.84427988096061,
+     "achat_pct": 63.3521644196444
+    }
+   },
+   "comparaisons": {
+    "1m": {
+     "pile_ou_face_pct_mois": -0.3814521781962539,
+     "contre_pile": {
+      "avantage": 0.06681155211484477,
+      "incertitude": 0.31848027245091887,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -0.6524004301596847,
+      "incertitude": 0.5941160477766566,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.47716758582496377,
+      "incertitude": 0.358259507413826,
+      "bat": false
+     }
+    },
+    "3m": {
+     "pile_ou_face_pct_mois": -0.34100012479701863,
+     "contre_pile": {
+      "avantage": -0.21811025482702157,
+      "incertitude": 0.33317085737092383,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -0.8968701837023157,
+      "incertitude": 0.5906750643206126,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.7642365791488375,
+      "incertitude": 0.40933692928297116,
+      "bat": false
+     }
+    },
+    "6m": {
+     "pile_ou_face_pct_mois": -0.2693118877849792,
+     "contre_pile": {
+      "avantage": 0.35014864950229807,
+      "incertitude": 0.30872011089275675,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -0.25692304236095653,
+      "incertitude": 0.5311337016532901,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.12195116763801687,
+      "incertitude": 0.3523593632463715,
+      "bat": false
+     }
+    },
+    "12m": {
+     "pile_ou_face_pct_mois": -0.1987039856388651,
+     "contre_pile": {
+      "avantage": 0.3537778131938719,
+      "incertitude": 0.4419823155194109,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -0.18268597652326873,
+      "incertitude": 0.3524093150828485,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.16651171756905198,
+      "incertitude": 0.342876117639305,
+      "bat": false
+     }
+    }
+   }
+  },
+  "USA500IDXUSD": {
+   "nom": "S&P 500",
+   "mesures": {
+    "acheteur": {
+     "gain_pct_mois": -0.018402903433401247,
+     "volatilite_an_pct": 17.86397727573547,
+     "gain_sur_vol": -0.012362019823030873,
+     "pire_baisse_pct": 63.60787436855075,
+     "pire_jour_pct": -17.571424287265152,
+     "jours_sous_5pct": 19,
+     "trades_an": 0.11396255850234009,
+     "challenge": {
+      "reussi": 1.0,
+      "mur": 6.7,
+      "inactivite": 91.4,
+      "non_conclu": 1.0,
+      "departs": 105
+     }
+    },
+    "1m": {
+     "gain_pct_mois": -0.22800602916471427,
+     "volatilite_an_pct": 11.651495366873172,
+     "gain_sur_vol": -0.2348258540063112,
+     "pire_baisse_pct": 38.996695629674946,
+     "pire_jour_pct": -6.732455672413373,
+     "jours_sous_5pct": 5,
+     "trades_an": 19.373634945397814,
+     "challenge": {
+      "reussi": 2.9,
+      "mur": 6.7,
+      "inactivite": 88.6,
+      "non_conclu": 1.9,
+      "departs": 105
+     }
+    },
+    "3m": {
+     "gain_pct_mois": -0.24717376787066409,
+     "volatilite_an_pct": 10.76637892990011,
+     "gain_sur_vol": -0.2754951533621609,
+     "pire_baisse_pct": 51.079595640668444,
+     "pire_jour_pct": -6.774171847620557,
+     "jours_sous_5pct": 3,
+     "trades_an": 10.028705148205928,
+     "challenge": {
+      "reussi": 1.0,
+      "mur": 2.9,
+      "inactivite": 95.2,
+      "non_conclu": 1.0,
+      "departs": 105
+     }
+    },
+    "6m": {
+     "gain_pct_mois": -0.12139983541029578,
+     "volatilite_an_pct": 11.52779386600749,
+     "gain_sur_vol": -0.12637266434987818,
+     "pire_baisse_pct": 48.067928002017,
+     "pire_jour_pct": -6.427170700154515,
+     "jours_sous_5pct": 3,
+     "trades_an": 8.661154446177846,
+     "challenge": {
+      "reussi": 0.0,
+      "mur": 4.8,
+      "inactivite": 94.3,
+      "non_conclu": 1.0,
+      "departs": 105
+     }
+    },
+    "12m": {
+     "gain_pct_mois": -0.19284523495593753,
+     "volatilite_an_pct": 11.169400993655893,
+     "gain_sur_vol": -0.20718593779430605,
+     "pire_baisse_pct": 43.43201124183255,
+     "pire_jour_pct": -6.427170700154515,
+     "jours_sous_5pct": 7,
+     "trades_an": 3.9886895475819033,
+     "challenge": {
+      "reussi": 0.0,
+      "mur": 4.8,
+      "inactivite": 94.3,
+      "non_conclu": 1.0,
+      "departs": 105
+     }
+    }
+   },
+   "infos": {
+    "acheteur": {
+     "en_position_pct": 99.93073403692969
+    },
+    "1m": {
+     "en_position_pct": 99.95443028745375,
+     "achat_pct": 69.89568896345466
+    },
+    "3m": {
+     "en_position_pct": 99.8869871128853,
+     "achat_pct": 76.06708151608606
+    },
+    "6m": {
+     "en_position_pct": 99.79220211078909,
+     "achat_pct": 78.38237711655434
+    },
+    "12m": {
+     "en_position_pct": 99.9343796139334,
+     "achat_pct": 85.11445508435932
+    }
+   },
+   "comparaisons": {
+    "1m": {
+     "pile_ou_face_pct_mois": -0.27332499187642373,
+     "contre_pile": {
+      "avantage": 0.04531896271170943,
+      "incertitude": 0.2632578728308624,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -0.20960312573131284,
+      "incertitude": 0.7395825668931799,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.2160030277736109,
+      "incertitude": 0.5511857580569494,
+      "bat": false
+     }
+    },
+    "3m": {
+     "pile_ou_face_pct_mois": -0.32492445287234034,
+     "contre_pile": {
+      "avantage": 0.07775068500167635,
+      "incertitude": 0.2556621181180681,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -0.2287708644372624,
+      "incertitude": 0.6810530901024574,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.23608258539118995,
+      "incertitude": 0.472046042786971,
+      "bat": false
+     }
+    },
+    "6m": {
+     "pile_ou_face_pct_mois": -0.2572905894432109,
+     "contre_pile": {
+      "avantage": 0.1358907540329151,
+      "incertitude": 0.2903734861488874,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -0.10299693197689434,
+      "incertitude": 0.6153678340261173,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.10952426738634576,
+      "incertitude": 0.44052890548678153,
+      "bat": false
+     }
+    },
+    "12m": {
+     "pile_ou_face_pct_mois": -0.358141029060275,
+     "contre_pile": {
+      "avantage": 0.16529579410433745,
+      "incertitude": 0.29312488799741565,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -0.17444233152253616,
+      "incertitude": 0.5279637651637703,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.18133887191469125,
+      "incertitude": 0.3447604124386394,
+      "bat": false
+     }
+    }
+   }
+  },
+  "USATECHIDXUSD": {
+   "nom": "Nasdaq 100",
+   "mesures": {
+    "acheteur": {
+     "gain_pct_mois": 2.1937652113228014,
+     "volatilite_an_pct": 49.56307883514096,
+     "gain_sur_vol": 0.5311450207408961,
+     "pire_baisse_pct": 115.55957652423447,
+     "pire_jour_pct": -26.849578015529552,
+     "jours_sous_5pct": 296,
+     "trades_an": 0.0,
+     "challenge": {
+      "reussi": 25.7,
+      "mur": 54.3,
+      "inactivite": 20.0,
+      "non_conclu": 0.0,
+      "departs": 105
+     }
+    },
+    "1m": {
+     "gain_pct_mois": -0.06519338907560834,
+     "volatilite_an_pct": 11.192221813129018,
+     "gain_sur_vol": -0.06989860297350432,
+     "pire_baisse_pct": 31.68697655727329,
+     "pire_jour_pct": -5.607789855662471,
+     "jours_sous_5pct": 2,
+     "trades_an": 19.943447737909516,
+     "challenge": {
+      "reussi": 2.9,
+      "mur": 10.5,
+      "inactivite": 82.9,
+      "non_conclu": 3.8,
+      "departs": 105
+     }
+    },
+    "3m": {
+     "gain_pct_mois": -0.26673874659917685,
+     "volatilite_an_pct": 10.015532091588588,
+     "gain_sur_vol": -0.31959010563985174,
+     "pire_baisse_pct": 41.424924393681664,
+     "pire_jour_pct": -5.439384549492228,
+     "jours_sous_5pct": 1,
+     "trades_an": 11.28229329173167,
+     "challenge": {
+      "reussi": 0.0,
+      "mur": 4.8,
+      "inactivite": 92.4,
+      "non_conclu": 2.9,
+      "departs": 105
+     }
+    },
+    "6m": {
+     "gain_pct_mois": -0.009800345118426472,
+     "volatilite_an_pct": 12.06635723594855,
+     "gain_sur_vol": -0.009746449497678299,
+     "pire_baisse_pct": 42.549701314382936,
+     "pire_jour_pct": -6.667077348516265,
+     "jours_sous_5pct": 6,
+     "trades_an": 5.2422776911076445,
+     "challenge": {
+      "reussi": 0.0,
+      "mur": 4.8,
+      "inactivite": 94.3,
+      "non_conclu": 1.0,
+      "departs": 105
+     }
+    },
+    "12m": {
+     "gain_pct_mois": -0.09603214561725043,
+     "volatilite_an_pct": 12.274596268537499,
+     "gain_sur_vol": -0.09388380050925375,
+     "pire_baisse_pct": 40.58468980915267,
+     "pire_jour_pct": -7.200314473178543,
+     "jours_sous_5pct": 7,
+     "trades_an": 3.7607644305772228,
+     "challenge": {
+      "reussi": 0.0,
+      "mur": 5.7,
+      "inactivite": 93.3,
+      "non_conclu": 1.0,
+      "departs": 105
+     }
+    }
+   },
+   "infos": {
+    "acheteur": {
+     "en_position_pct": 99.9726696304934
+    },
+    "1m": {
+     "en_position_pct": 99.959915458057,
+     "achat_pct": 67.9377346797419
+    },
+    "3m": {
+     "en_position_pct": 99.88703447270608,
+     "achat_pct": 74.65980810623472
+    },
+    "6m": {
+     "en_position_pct": 99.90889876831135,
+     "achat_pct": 81.3655761024182
+    },
+    "12m": {
+     "en_position_pct": 99.94533926098681,
+     "achat_pct": 86.9070623837824
+    }
+   },
+   "comparaisons": {
+    "1m": {
+     "pile_ou_face_pct_mois": -0.21728107095532087,
+     "contre_pile": {
+      "avantage": 0.15208768187971247,
+      "incertitude": 0.2829706443765622,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -2.25895860039841,
+      "incertitude": 1.5370808547278123,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.560584462998202,
+      "incertitude": 0.4434779054674258,
+      "bat": false
+     }
+    },
+    "3m": {
+     "pile_ou_face_pct_mois": -0.2565193537831536,
+     "contre_pile": {
+      "avantage": -0.010219392816023186,
+      "incertitude": 0.23412186735179544,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -2.4605039579219787,
+      "incertitude": 1.5229192677799255,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.7100470799756711,
+      "incertitude": 0.3799380484241988,
+      "bat": false
+     }
+    },
+    "6m": {
+     "pile_ou_face_pct_mois": -0.26658457934276086,
+     "contre_pile": {
+      "avantage": 0.25678423422433444,
+      "incertitude": 0.3231473483424544,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -2.203565556441228,
+      "incertitude": 1.4049512662852797,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.5438824754813392,
+      "incertitude": 0.37816466434530444,
+      "bat": false
+     }
+    },
+    "12m": {
+     "pile_ou_face_pct_mois": -0.2703677000410829,
+     "contre_pile": {
+      "avantage": 0.17433555442383236,
+      "incertitude": 0.32716879399027116,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -2.289797356940052,
+      "incertitude": 1.4176975739530508,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.63933136975379,
+      "incertitude": 0.3980492961198259,
+      "bat": false
+     }
+    }
+   }
+  },
+  "EURUSD": {
+   "nom": "euro-dollar",
+   "mesures": {
+    "acheteur": {
+     "gain_pct_mois": -0.3843753219827239,
+     "volatilite_an_pct": 8.406669432001873,
+     "gain_sur_vol": -0.5486719682629789,
+     "pire_baisse_pct": 50.89409654014503,
+     "pire_jour_pct": -3.050099247200691,
+     "jours_sous_5pct": 0,
+     "trades_an": 0.2278540237055521,
+     "challenge": {
+      "reussi": 0.0,
+      "mur": 0.0,
+      "inactivite": 99.0,
+      "non_conclu": 1.0,
+      "departs": 105
+     }
+    },
+    "1m": {
+     "gain_pct_mois": -0.023181618693213852,
+     "volatilite_an_pct": 10.001889381879844,
+     "gain_sur_vol": -0.027812687553067372,
+     "pire_baisse_pct": 43.05866802836621,
+     "pire_jour_pct": -4.335598825014589,
+     "jours_sous_5pct": 0,
+     "trades_an": 24.2664535246413,
+     "challenge": {
+      "reussi": 1.9,
+      "mur": 4.8,
+      "inactivite": 91.4,
+      "non_conclu": 1.9,
+      "departs": 105
+     }
+    },
+    "3m": {
+     "gain_pct_mois": -0.053499685568192894,
+     "volatilite_an_pct": 9.790880549727946,
+     "gain_sur_vol": -0.06557083640818737,
+     "pire_baisse_pct": 27.150212293891997,
+     "pire_jour_pct": -4.115451179510419,
+     "jours_sous_5pct": 0,
+     "trades_an": 16.291562694946975,
+     "challenge": {
+      "reussi": 1.0,
+      "mur": 3.8,
+      "inactivite": 92.4,
+      "non_conclu": 2.9,
+      "departs": 105
+     }
+    },
+    "6m": {
+     "gain_pct_mois": -0.0720511724181162,
+     "volatilite_an_pct": 9.601836185932722,
+     "gain_sur_vol": -0.0900467423391483,
+     "pire_baisse_pct": 54.89963715926732,
+     "pire_jour_pct": -4.02048265993502,
+     "jours_sous_5pct": 0,
+     "trades_an": 9.683796007485965,
+     "challenge": {
+      "reussi": 0.0,
+      "mur": 5.7,
+      "inactivite": 92.4,
+      "non_conclu": 1.9,
+      "departs": 105
+     }
+    },
+    "12m": {
+     "gain_pct_mois": -0.26844609264174596,
+     "volatilite_an_pct": 11.796477433554607,
+     "gain_sur_vol": -0.27307754622900743,
+     "pire_baisse_pct": 65.53813251337618,
+     "pire_jour_pct": -4.267032145897509,
+     "jours_sous_5pct": 0,
+     "trades_an": 6.038131628197131,
+     "challenge": {
+      "reussi": 1.0,
+      "mur": 1.9,
+      "inactivite": 96.2,
+      "non_conclu": 1.0,
+      "departs": 105
+     }
+    }
+   },
+   "infos": {
+    "acheteur": {
+     "en_position_pct": 99.94586614173228
+    },
+    "1m": {
+     "en_position_pct": 99.86056430446195,
+     "achat_pct": 49.08090349075975
+    },
+    "3m": {
+     "en_position_pct": 99.77362204724409,
+     "achat_pct": 47.22797671895038
+    },
+    "6m": {
+     "en_position_pct": 99.77362204724409,
+     "achat_pct": 47.10466607477557
+    },
+    "12m": {
+     "en_position_pct": 99.82775590551181,
+     "achat_pct": 48.79138936817024
+    }
+   },
+   "comparaisons": {
+    "1m": {
+     "pile_ou_face_pct_mois": -0.20440902876458192,
+     "contre_pile": {
+      "avantage": 0.18122741007136814,
+      "incertitude": 0.2313534994496106,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": 0.3611937032895101,
+      "incertitude": 0.33363251994989057,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": 0.4341314090988365,
+      "incertitude": 0.36785906988414757,
+      "bat": false
+     }
+    },
+    "3m": {
+     "pile_ou_face_pct_mois": -0.20806568406479448,
+     "contre_pile": {
+      "avantage": 0.15456599849660158,
+      "incertitude": 0.26057313336685184,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": 0.33087563641453116,
+      "incertitude": 0.3875005407628223,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": 0.3941654562857198,
+      "incertitude": 0.4184720243083451,
+      "bat": false
+     }
+    },
+    "6m": {
+     "pile_ou_face_pct_mois": -0.16839020000137594,
+     "contre_pile": {
+      "avantage": 0.09633902758325964,
+      "incertitude": 0.2664974413419508,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": 0.3123241495646078,
+      "incertitude": 0.41623499805670017,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": 0.3669703575047505,
+      "incertitude": 0.44438018224914155,
+      "bat": false
+     }
+    },
+    "12m": {
+     "pile_ou_face_pct_mois": -0.14264107808904175,
+     "contre_pile": {
+      "avantage": -0.12580501455270424,
+      "incertitude": 0.31439525033563454,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": 0.11592922934097798,
+      "incertitude": 0.4476270670859812,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": 0.27092028169477256,
+      "incertitude": 0.5182262483593723,
+      "bat": false
+     }
+    }
+   }
+  },
+  "USDJPY": {
+   "nom": "dollar-yen",
+   "mesures": {
+    "acheteur": {
+     "gain_pct_mois": 0.30534451364729737,
+     "volatilite_an_pct": 7.803812655470336,
+     "gain_sur_vol": 0.4695312824045147,
+     "pire_baisse_pct": 15.607661750218263,
+     "pire_jour_pct": -5.347941174998545,
+     "jours_sous_5pct": 2,
+     "trades_an": 0.2278540237055521,
+     "challenge": {
+      "reussi": 0.0,
+      "mur": 1.9,
+      "inactivite": 97.1,
+      "non_conclu": 1.0,
+      "departs": 105
+     }
+    },
+    "1m": {
+     "gain_pct_mois": -0.2721297484485883,
+     "volatilite_an_pct": 11.95093421851087,
+     "gain_sur_vol": -0.27324700493497983,
+     "pire_baisse_pct": 54.67407379172782,
+     "pire_jour_pct": -5.284319336079454,
+     "jours_sous_5pct": 2,
+     "trades_an": 25.74750467872739,
+     "challenge": {
+      "reussi": 1.9,
+      "mur": 13.3,
+      "inactivite": 83.8,
+      "non_conclu": 1.0,
+      "departs": 105
+     }
+    },
+    "3m": {
+     "gain_pct_mois": 0.2502184448946522,
+     "volatilite_an_pct": 12.686351377049263,
+     "gain_sur_vol": 0.23668123714181805,
+     "pire_baisse_pct": 24.000946339744406,
+     "pire_jour_pct": -7.392301911014787,
+     "jours_sous_5pct": 3,
+     "trades_an": 11.164847161572053,
+     "challenge": {
+      "reussi": 4.8,
+      "mur": 3.8,
+      "inactivite": 90.5,
+      "non_conclu": 1.0,
+      "departs": 105
+     }
+    },
+    "6m": {
+     "gain_pct_mois": -0.15297427018797619,
+     "volatilite_an_pct": 13.2720700834344,
+     "gain_sur_vol": -0.13831235298756756,
+     "pire_baisse_pct": 48.03829232854424,
+     "pire_jour_pct": -7.338995182555795,
+     "jours_sous_5pct": 1,
+     "trades_an": 8.0888178415471,
+     "challenge": {
+      "reussi": 2.9,
+      "mur": 5.7,
+      "inactivite": 89.5,
+      "non_conclu": 1.9,
+      "departs": 105
+     }
+    },
+    "12m": {
+     "gain_pct_mois": -0.06830828473267155,
+     "volatilite_an_pct": 13.473110894404133,
+     "gain_sur_vol": -0.06083965486638346,
+     "pire_baisse_pct": 55.205887407962784,
+     "pire_jour_pct": -7.733814879136175,
+     "jours_sous_5pct": 4,
+     "trades_an": 11.620555208983157,
+     "challenge": {
+      "reussi": 1.9,
+      "mur": 8.6,
+      "inactivite": 88.6,
+      "non_conclu": 1.0,
+      "departs": 105
+     }
+    }
+   },
+   "infos": {
+    "acheteur": {
+     "en_position_pct": 99.88188588864465
+    },
+    "1m": {
+     "en_position_pct": 99.77033367236457,
+     "achat_pct": 56.44710447564866
+    },
+    "3m": {
+     "en_position_pct": 99.81790741166049,
+     "achat_pct": 61.020263940703735
+    },
+    "6m": {
+     "en_position_pct": 99.76049082975163,
+     "achat_pct": 57.526475037821484
+    },
+    "12m": {
+     "en_position_pct": 99.81462646412284,
+     "achat_pct": 65.06368641630372
+    }
+   },
+   "comparaisons": {
+    "1m": {
+     "pile_ou_face_pct_mois": -0.21718385728938358,
+     "contre_pile": {
+      "avantage": -0.05494589115920459,
+      "incertitude": 0.296728743065844,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -0.5774742620958857,
+      "incertitude": 0.3240608775450909,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.7397412042443722,
+      "incertitude": 0.40775520267053406,
+      "bat": false
+     }
+    },
+    "3m": {
+     "pile_ou_face_pct_mois": -0.20172887659999802,
+     "contre_pile": {
+      "avantage": 0.4519473214946502,
+      "incertitude": 0.31576616582154254,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -0.05512606875264517,
+      "incertitude": 0.35824370763689056,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.2461681243636996,
+      "incertitude": 0.44400132860774505,
+      "bat": false
+     }
+    },
+    "6m": {
+     "pile_ou_face_pct_mois": -0.1615334653377508,
+     "contre_pile": {
+      "avantage": 0.008559195149774714,
+      "incertitude": 0.37037864359835776,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -0.4583187838352735,
+      "incertitude": 0.3674482112750419,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.6722786107244387,
+      "incertitude": 0.43784684008241964,
+      "bat": false
+     }
+    },
+    "12m": {
+     "pile_ou_face_pct_mois": -0.21870935486571624,
+     "contre_pile": {
+      "avantage": 0.15040107013304477,
+      "incertitude": 0.37638057053460927,
+      "bat": false
+     },
+     "contre_acheteur": {
+      "avantage": -0.37365279837996895,
+      "incertitude": 0.3521359122391256,
+      "bat": false
+     },
+     "contre_acheteur_risque_egal": {
+      "avantage": -0.5954788710849892,
+      "incertitude": 0.41397047543402726,
+      "bat": false
+     }
+    }
+   }
+  }
+ },
+ "robustesse": {
+  "1m": {
+   "positifs_sur_5": 1,
+   "avantage_moyen": -0.3118729743484624,
+   "incertitude": 0.21075288586775964,
+   "robuste": false
+  },
+  "3m": {
+   "positifs_sur_5": 1,
+   "avantage_moyen": -0.31247378251873564,
+   "incertitude": 0.2217267243348602,
+   "robuste": false
+  },
+  "6m": {
+   "positifs_sur_5": 1,
+   "avantage_moyen": -0.21613323274507792,
+   "incertitude": 0.21988787501312387,
+   "robuste": false
+  },
+  "12m": {
+   "positifs_sur_5": 1,
+   "avantage_moyen": -0.26234810972554995,
+   "incertitude": 0.21939637949509241,
+   "robuste": false
+  }
+ }
+}

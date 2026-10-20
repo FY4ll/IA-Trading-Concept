@@ -1,0 +1,243 @@
+# ARBRE DE L'OR — école de la précision (18/10/2026, ordre du chef de projet) — le SEUL fichier de réglages de cet arbre.
+# Même simulateur FTMO, mêmes yeux, mêmes mains, même mécanique d'arbre qu'HYPERNOVA (reglages.yaml) ; seuls changent :
+# les marchés (l'or seul, réel ET retourné), les périodes d'histoire, l'examen (l'or seul en 2023), la graine (héritée
+# d'HYPERNOVA) et deux garde-fous adaptés à un seul marché. Lancement : python -m collapsar.ecole.precision.arbre_or
+# (le lanceur choisit ce fichier ; HYPERNOVA garde reglages.yaml, rien ne change pour lui).
+
+# NOM de l'arbre (provisoire, le chef de projet confirmera) : changer cette seule ligne pour le renommer.
+nom: MAGNETAR
+# Dossier de vie (indépendant du nom) : verrou, PAUSE, ARRET, EN_COURS, branches, journal, images, rapport.
+vie: collapsar/vie/arbre_or
+# Carte graphique partagée avec HYPERNOVA (~3,7 Go) : ce cœur ne réserve pas plus que ceci (+ ~0,4 Go de contexte).
+# Mesuré le 18/10 sans plafond : 2,0 Go au total (dont surtout de la réserve inutilisée) -> carte pleine à 5,9 / 6,1 Go ;
+# plafond 1,2 Go : 1,65 Go au plus ; plafond 1,0 Go : manque de mémoire (morceaux inutilisables). Voir arbre_or.py.
+# 19/10 soir (MAGNETAR seule sur la carte, accord du chef de projet) : 1,25 -> 3,0 Go (mesuré : ~0,7 Go utilisés,
+# ~1,3 Go réservés avec 768 comptes et 448 challenges d'examen ; carte ~2 Go au total ; plus de marge de morceaux).
+carte_max_go: 3.0
+
+periodes:
+  # 19/10/2026 (accord du chef de projet) : EXAMEN TOURNANT (section examen_tournant ci-dessous, tournant.py).
+  # Apprentissage : jusqu'à fin 2023, SAUF les blocs d'examen et leurs marges (jamais appris). Avant le 19/10 : fin 2022.
+  apprentissage_fin: "2024-01-01"
+  # SÉLECTION : le réservoir des blocs d'examen (2010 -> 2023). Avant le 19/10 : 2023 seul (examen fixe).
+  selection_de: "2010-01-01"
+  selection_jusqua: "2024-01-01"
+  # RAPPORT (jamais pour choisir) : 01/2024 -> 09/2025.
+  rapport_de: "2024-01-01"
+  rapport_jusqua: "2025-10-01"
+  # Rien n'est jamais chargé à partir de cette date (les 12 mois cachés restent intacts).
+  fin_donnees: "2025-10-01"
+  # Or à la minute : à partir de 2015 (heures vérifiées, laboratoire SMC).
+  debut_minutes: "2015-01-01"
+  foule_debut: "2020-09-01"
+  # Plus d'histoire que l'école générale (2010) : l'or en 15 min commence le 11/06/2004 (avant 2015, les mondes
+  # d'apprentissage n'ont que l'or en 15 min ; ensuite l'or à la minute s'y ajoute).
+  debut_donnees: "2004-06-11"
+
+marches:
+  cryptos_binance: []                      # la foule n'existe pas sur l'or (drapeau « foule absente » : normal)
+  minutes: {"XAUUSD@M1": [kaggle_or, XAUUSD]}
+  exclure_15min: [BTCUSD, ETHUSD, LTCUSD, XRPUSD]
+  # L'OR SEUL : à la minute (unités journalier -> 3 min, depuis 2015) et en 15 min (journalier -> 15 min, depuis 2004).
+  seulement: [XAUUSD@M1, XAUUSD]
+
+yeux:                                      # identiques à HYPERNOVA (les cerveaux hérités ont les mêmes entrées)
+  zones_par_cote: 2
+  bougies_brutes: 8
+  jours_agitation: 14
+  reaction_hauteur: 0.25
+  foule: false                             # allumée par foule.json recopié de la graine (cerveau greffé de la foule)
+  juge: false
+  monde: false
+  # TENDANCE DE FOND (19/10, tendance.py) : le tableau est fabriqué dans chaque monde ; seule la branche « tendance »
+  # (cerveau greffé : 12 entrées en dernier, poids à zéro au départ) le voit. HYPERNOVA : absent = éteint.
+  tendance: true
+
+mains:                                     # identiques à HYPERNOVA, + le STOP SUIVEUR (18/10, voir suiveur.py)
+  risques_pct: [0.1, 0.25, 0.5, 1.0, 2.0]
+  parts_tp1: [0.0, 0.5, 0.8]
+  tp1_en_r: [1.0, 2.0, 3.0]
+  marges_stop: [0.0, 0.05, 0.1, 0.25, 0.5]
+  validites_ordre: [16, 96, 288]
+  delais_regard: [1, 2, 4, 8, 16]
+  # 20/10 (corrections graves, audit : 97 % de ses regards avec un ordre limite « parqué » à ~5 % du prix, exécuté 0,2 %
+  # du temps) : 6.0 -> 1.5 agitation au plus entre le prix et un ordre limite ; et un ordre en attente ne bloque plus :
+  # ouvrir au marché ou poser un autre ordre limite le REMPLACE (marche_annule_ordre). HYPERNOVA : 6.0, absent.
+  entree_max_agitation: 1.5
+  marche_annule_ordre: true
+  gros_mouvement: 1.0
+  # STOP SUIVEUR derrière la structure (ordre du chef de projet, 18/10, « les gros mouvements, pas des miettes ») : un
+  # CHOIX de l'IA à chaque trade : aucun, ou derrière chaque nouveau creux (achat) / sommet (vente) confirmé d'une de ces
+  # unités, dès l'entrée ou après l'objectif 1, + la marge de son stop ; jamais reculé. HYPERNOVA : absent = éteint.
+  suiveur: true
+  suiveur_unites: [D1, H4, H1, M15]
+  suiveur_depart_pct: 10.0                 # branches greffées : toutes les options de suiveur ensemble = 10 % au départ
+  # STOP SUIVEUR APRÈS +1R (19/10, suiveur.py) : options de plus pour la seule branche « suiveur_1r » : le suiveur ne
+  # s'active qu'après +1R atteint (avant : stop d'origine), puis derrière les creux / sommets confirmés de ces unités,
+  # ou à ces agitations sous le plus haut atteint ; jamais reculé. HYPERNOVA : absent = éteint.
+  suiveur_1r: true
+  suiveur_1r_unites: [H1, H4]
+  suiveur_1r_agitations: [1.0]
+  suiveur_1r_depart_pct: 70.0              # penchant de départ de la branche : ces options ensemble ~70 % des trades
+  # COMPTE FTMO SWING (19/10/2026, compte du chef de projet ; HYPERNOVA : absent = « normal ») : plus de fermeture forcée
+  # avant les pauses de plus de 2 h ni le week-end, ordres en attente gardés ; frais de nuit FTMO (or : nuit triple le
+  # mercredi, vendredi -> lundi = 1 nuit) et écart d'ouverture du lundi subi au prix d'ouverture (comme MT5) ; levier
+  # Swing mesuré déjà en place (or 1:15, mains/conditions_ftmo.json) ; annonces : aucune restriction en Swing (aucune
+  # simulée). Règle FTMO contre le jeu des écarts : aucune NOUVELLE position dans les 2 dernières heures avant une pause
+  # de plus de 2 h (les positions déjà ouvertes restent). Voir univers.py et simulateur.py.
+  compte: swing
+  ouverture_interdite_avant_pause_h: 2.0
+
+monde:
+  challenge_jours: 61
+  echauffement_jours: 40
+  frais_stop_glissement: 1.0
+  punition_mur: 20.0
+  bonus_reussite: 5.0
+
+arbre:
+  places: 4
+  jeunesse: 3
+  coupe_force: 2.0
+  renouveler_tous: 10
+  bruit_division: 0.02
+  # 20/10 (corrections graves, audit : vitesse au plancher 3e-5 sur les 4 branches, curiosité effondrée = elle n'apprend
+  # presque plus) : PLANCHERS (coeur.planchers ; branches vivantes remontées au réveil). HYPERNOVA : absents (3e-5, 1e-4).
+  vitesse_min: 0.0001
+  curiosite_min: 0.003
+  temperaments:                            # (graine neuve par défaut si une branche « neuve » n'a pas le sien)
+    - {nom: patiente, vitesse: 0.0003, curiosite: 0.003, garder: 2.0, limite: 0.5, delai: [-1.0, -0.5, 0.0, 0.5, 1.0], part: [0.0, 0.0, 0.0]}
+  # GRAINE (validée par le chef de projet, 18/10) : partir de la CIME d'HYPERNOVA, qui a déjà appris le geste.
+  # Copiée (jamais déplacée) juste après la fin d'une génération d'HYPERNOVA (graine.py).
+  graine:
+    source: collapsar/vie/hypernova
+    branches:
+      - {nom: heritiere, de: cime}                           # la cime, avec ses réglages
+      - {nom: curieuse, de: cime, curiosite_x: 2.0}          # la cime, 2 x plus de curiosité
+      - {nom: seconde, de: deuxieme}                         # la 2e meilleure branche vivante d'HYPERNOVA
+      - {nom: temoin, de: neuve, temperament: {nom: temoin, vitesse: 0.0003, curiosite: 0.003, garder: 1.5, limite: 0.5, delai: [-0.5, 0.0, 0.5, 0.5, 0.0], part: [0.0, 0.0, 0.0]}}
+
+ecole:
+  # 19/10 soir : 512 -> 640 comptes par leçon (+25 % d'expérience par leçon). Mesuré : 768 comptes = génération de
+  # 9 à 10,7 min (mondes après 2015, or à la minute : leçons ~115 s par branche) : trop long ; 640 = ~8 à 10 min.
+  comptes: 640
+  # 19/10 soir (chef de projet : « elle a appris acheter, pas lire le sens ») : APPRENTISSAGE APPARIÉ (jeu.Lecon) :
+  # moitié des comptes sur l'or réel, moitié sur le MÊME or retourné aux MÊMES départs : « toujours acheter » ~ 0.
+  apprentissage_apparie: true
+  bougies_par_lecon: 256
+  lecons_par_generation: 8
+  marches_par_monde: 24                    # = tous les marchés d'or disponibles à l'époque tirée (1 ou 2)
+  marches_min_monde: 1                     # un seul marché suffit (HYPERNOVA : 4)
+  reel_et_miroir: true                     # chaque marché dans les deux sens : un compte tombe 1 fois sur 2 sur l'or retourné
+  monde_mois: 18
+  part_monde_foule: 0.0                    # pas de foule sur l'or
+  part_miroir: 0.5                         # (sans effet avec reel_et_miroir)
+  marches_par_compte: [1, 1]               # un compte = l'or seul (réel ou retourné)
+  vitesse: 0.0003
+  epoques: 4
+  paquet: 1024
+  gamma: 0.9995
+  lam: 0.95
+  coupe: 0.2
+  curiosite: 0.003
+  # 20/10 (corrections graves) : PLANCHER DU HASARD de ses choix (entropie moyenne par regard ; 3,3 au départ, 2,0-2,4
+  # au milieu de sa vie, 1,0 à la génération 282) : en dessous, poussée hasard_force x (hasard_min - hasard) (jeu.apprendre)
+  hasard_min: 2.0
+  hasard_force: 0.03
+
+note:                                      # HYPERNOVA + (20/10) le gain réel
+  bonus_reussite: 5.0
+  bonus_vitesse: 5.0
+  punition_mur: 10.0
+  punition_inactif: 5.0
+  plafond_gain_mois: 10.0
+  baisse_toleree: 6.0
+  # 20/10 (corrections graves, audit : sa note montait parce que le JUMEAU perdait plus, son gain réel restait ~-0,1 %/mois) :
+  # terme de gain = min(gain - jumeau, gain) ; réussite - réussite du jumeau sur le même challenge (jeu.note_challenges).
+  # Passage : notes d'avant mises de côté dans vie/arbre_or/note_gain_reel.json (tournant.passer_gain_reel).
+  gain_reel: true
+  reussite_contre_jumeau: true
+
+selection:
+  # Un départ tous les 30 jours ne donne que 11 challenges de 2 mois en 2023 (trop peu pour un seul marché) :
+  # un départ tous les 7 jours = 44 départs, l'incertitude tient compte du chevauchement (44 x 7/61 = 5 indépendants
+  # par panier). Deux paniers : l'or réel ET l'or retourné (pour ne pas élire une branche qui achète tout le temps
+  # pendant une année de hausse : elle doit savoir vendre aussi). Chacun avec son jumeau au hasard comme HYPERNOVA.
+  pas_jours: 7
+  paniers: [[XAUUSD@M1], [XAUUSD@M1_MIROIR]]
+  taille_panier: 1
+  seuil_bruit: 2.0
+  # demande du chef de projet (« les gros mouvements, pas des miettes ») : part du mouvement attrapée, trades >= 5R / 10R
+  mesurer_mouvement: true
+  # (19/10) comment ses trades se ferment (main, stop, suiveur, objectif, forcée) et part gardée le week-end
+  mesurer_sorties: true
+  # (19/10) achats / ventes, trades >= 3R / 5R, stop réellement remonté, suiveur après +1R (rapport de génération)
+  mesurer_tenue: true
+  # (20/10) ouvertures RÉELLEMENT exécutées (au marché, ordres limites exécutés / posés / expirés) et R par challenge
+  mesurer_executions: true
+  trades_mois_min: 1.0                    # garde-fou anti-paralysie : au moins 1 trade par mois sur l'or
+  inactifs_max_pct: 20.0
+  murs_max_pct: 30.0                       # garde-fou anti-casino
+
+# EXAMEN TOURNANT (19/10/2026, accord du chef de projet ; tournant.py ; HYPERNOVA : absent = examen fixe comme avant).
+# Un réservoir de blocs de 61 jours (un challenge de 2 mois), un par tranche de 6 mois de 2010 à 2023 (début tiré au
+# 1er d'un des 4 premiers mois de la tranche, graine fixée : tirage fait une fois, écrit dans blocs_examen.json et vérifié
+# à chaque réveil). Chaque bloc + 7 jours avant et après est EXCLU des mondes d'apprentissage. À chaque génération,
+# `blocs_par_generation` blocs tirés au hasard (graine + numéro de génération), or réel ET retourné, jumeau au hasard,
+# les MÊMES pour toutes les branches. Incertitude mesurée par bloc (rapport de passage, vie/arbre_or/tournant/).
+# Biais de départ : les branches du 19/10 ont appris jusqu'à fin 2022 : seuls les blocs de 2023 sont neufs pour elles
+# (`appris_jusqua`) ; la note sur les blocs neufs est rapportée à part. Le contrôle 2024-2025 ne change pas.
+examen_tournant:
+  graine: 20261019
+  de: "2010-01-01"
+  jusqua: "2024-01-01"
+  tranche_mois: 6
+  bloc_jours: 61
+  marge_avant_jours: 7
+  marge_apres_jours: 7
+  # 19/10 soir (JUGE PLUS SÛR, mesuré sur les 28 blocs x 8 parties) : le hasard de SON jeu (écart type ~2,1 par
+  # partie de bloc) pèse plus que la différence entre blocs (~0 à 1,7) -> TOUS les blocs (16 -> 28) et 8 PARTIES par
+  # bloc (comptes différents), graine de l'examen changée à chaque génération (la même pour toutes les branches).
+  # Incertitude de l'écart entre deux branches : ~ ± 0,5-0,7 (16 x 1) -> ~ ± 0,2 (28 x 8). Examen ~22 s -> ~43 s.
+  # 20/10 (corrections graves, audit : « l'examen ne tourne plus », les 28 blocs à chaque génération = examen FIXE) :
+  # 28 -> 16 blocs tirés à chaque génération parmi les 26 déjà appris (graine + génération, les mêmes pour toutes les
+  # branches) + les 2 blocs NEUFS de 2023 toujours joués en TÉMOIN, hors de la note (temoins_neufs, tournant.py).
+  # RESTE VRAI (documenté) : 26 blocs sur 28 ont été appris par la lignée avant le 19/10 ; aucun autre bloc jamais
+  # appris n'existe avant 2024 ; cet examen ne prouve donc rien : seule preuve = controle_unique.py (2024-2025, UNE fois).
+  blocs_par_generation: 16
+  temoins_neufs: true
+  parties_par_bloc: 8
+  graine_par_generation: true
+  # 19/10 soir (chef de projet) : NOTE DE SÉLECTION = le côté le MOINS BON (moyenne or réel / moyenne or retourné) ;
+  # garde-fou anti-casino sur le côté qui a le plus de murs. Absent = moyenne des deux (comme avant).
+  note_cotes: moins_bon
+  marches: [XAUUSD@M1, XAUUSD]             # l'or à la minute dès qu'il existe (02/2015), sinon l'or en 15 min
+  appris_jusqua: "2023-01-01"
+
+gardefous:
+  fenetre_lecons: 8
+  position_min_pct: 0.5                    # un seul marché par compte (HYPERNOVA : jusqu'à 4) : seuil divisé par 2
+  murs_max_par_lecon_pour_512: 8.0
+  # 20/10 (corrections graves, bug de P2) : la « meilleure version » n'est enregistrée qu'APRÈS les garde-fous de
+  # l'examen, et seulement s'ils passent (coeur.generation)
+  meilleure_apres_gardefous: true
+
+rapports:
+  rapport_tous: 50
+  telephone_tous: 100
+  # 20/10 : le contrôle 2024-2025 n'est plus calculé toutes les 50 générations (il devenait un examen de sélection) :
+  # une seule fois par version figée (python -m collapsar.ecole.precision.controle_unique)
+  controle_auto: false
+
+# FRAIS HONNÊTES de l'or (20/10/2026, corrections graves ; frais_honnetes.py : sources et hypothèses). Base = l'écart FTMO
+# relevé (séance d'Asie, gardé à toute heure : aucune mesure FTMO de Londres / New York) ; facteurs du demi-écart d'une
+# bougie de 15 min : réouverture après une pause, dernière bougie avant une pause, bougie(s) d'une annonce 3 étoiles USD
+# (calendrier MetaTrader) : l'entrée et la sortie au marché ET le stop (avec son glissement) y paient l'écart élargi.
+# HYPOTHÈSES PRUDENTES (non mesurées dans le projet) : à remplacer par un relevé de nuit / d'annonce dès qu'il existe.
+frais_honnetes:
+  reouverture: 3.0
+  avant_pause: 2.0
+  annonce: 4.0
+  annonce_devises: [USD]
+  minutes_avant: 0
+  minutes_apres: 15

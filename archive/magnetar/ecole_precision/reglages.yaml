@@ -1,0 +1,132 @@
+# ARBRE HYPERNOVA — école de la précision (16/10/2026) — le SEUL fichier de réglages de cet arbre.
+# Code : collapsar/ecole/precision/ (cœur : coeur.py) ; vie : collapsar/vie/hypernova/.
+# « L'asymétrie par la précision » (pensée du chef de projet) : la grande zone donne la direction et la destination,
+# on descend dans les zones plus petites jusqu'au point exact où l'idée devient fausse, le stop se met juste derrière,
+# une partie est encaissée à l'objectif 1, le reste court. Ses zones d'offre et de demande sont une CONNAISSANCE que
+# l'IA voit, jamais une règle : elle choisit elle-même entrée, stop, destination, part encaissée, taille et moment.
+
+periodes:
+  # Les parties d'APPRENTISSAGE finissent avant cette date. 17/10 (greffe de la foule, accord du chef de projet) :
+  # 2022-01-01 -> 2023-01-01, pour que l'arbre apprenne avec la foule (comptes acheteurs Binance : 12/2021 sauf BTC).
+  apprentissage_fin: "2023-01-01"
+  # SÉLECTION (comparaison au champion) : challenges qui commencent et finissent dans [de, jusqua). 17/10 : 2023 seul.
+  selection_de: "2023-01-01"
+  selection_jusqua: "2024-01-01"
+  # RAPPORT (jamais pour choisir) : 01/2024 -> 09/2025.
+  rapport_de: "2024-01-01"
+  rapport_jusqua: "2025-10-01"
+  # Rien n'est jamais chargé à partir de cette date (les 12 mois cachés restent intacts).
+  fin_donnees: "2025-10-01"
+  # Marchés à la minute (or, Nasdaq, S&P 500, euro) : à partir de cette date (heures vérifiées, laboratoire SMC).
+  debut_minutes: "2015-01-01"
+  # Début des données de la foule (comptes acheteurs du bitcoin) : voir ecole.part_monde_foule.
+  foule_debut: "2020-09-01"
+
+marches:
+  cryptos_binance: [BTCUSDT, ETHUSDT, ADAUSDT, DOTUSDT, LTCUSDT, XRPUSDT, DOGEUSDT, XMRUSDT, BCHUSDT, BNBUSDT,
+                    SOLUSDT, AVAXUSDT, LINKUSDT, NEARUSDT, ALGOUSDT, ETCUSDT, XLMUSDT, UNIUSDT, VETUSDT]
+  # nom dans l'école -> (source minute, marché FTMO de la fiche)
+  minutes: {"XAUUSD@M1": [kaggle_or, XAUUSD], "US500@M1": [SPXUSD, USA500IDXUSD],
+            "US100@M1": [NSXUSD, USATECHIDXUSD], "EURUSD@M1": [EURUSD, EURUSD]}
+  # les ~45 marchés FTMO en 15 min : tout data/fx_intraday sauf les cryptos Dukascopy (les cryptos viennent de Binance)
+  exclure_15min: [BTCUSD, ETHUSD, LTCUSD, XRPUSD]
+
+yeux:
+  zones_par_cote: 2            # les 2 zones vivantes les plus proches, côté demande et côté offre, par unité
+  bougies_brutes: 8            # dernières clôtures vues en journalier, 4 h, 1 h, 15 min
+  jours_agitation: 14          # agitation = moyenne (plus haut - plus bas) des 14 derniers jours terminés
+  reaction_hauteur: 0.25       # réaction = le prix repart d'au moins max(hauteur de zone, 0,25 agitation)
+  # YEUX DE LA FOULE (foule.py, 17/10) : comptes acheteurs Binance, financement, positions ouvertes, flux, prime (19
+  # valeurs par crypto). Éteints par défaut. Un arbre GREFFÉ (foule.json dans son dossier) les allume seul.
+  foule: false
+  # NOTES DU JUGE (juge_trade.py, 17/10) : 8 notes par marché (meilleur trade à 2R de chaque côté selon l'école « juger
+  # un trade »). Éteintes par défaut. Un arbre GREFFÉ (juge.json dans son dossier) les allume seul.
+  juge: false
+  # YEUX DU MONDE (monde.py, 18/10) : risque géopolitique, incertitude, peur Cboe, GDELT (36 valeurs, les mêmes pour
+  # tous les marchés). Éteints par défaut. Un arbre GREFFÉ (monde.json dans son dossier) les allume seul.
+  monde: false
+
+mains:
+  risques_pct: [0.1, 0.25, 0.5, 1.0, 2.0]   # 2 % ajouté (chef de projet, 16/10) : les murs FTMO restent dans le simulateur
+  parts_tp1: [0.0, 0.5, 0.8]
+  tp1_en_r: [1.0, 2.0, 3.0]          # objectifs 1 possibles en plus des niveaux de structure
+  marges_stop: [0.0, 0.05, 0.1, 0.25, 0.5]   # en agitation
+  validites_ordre: [16, 96, 288]     # bougies de 15 min (4 h, 1 jour, 3 jours)
+  delais_regard: [1, 2, 4, 8, 16]    # bougies de 15 min (15 min -> 4 h)
+  entree_max_agitation: 6.0          # un ordre limite plus loin que 6 agitations n'est pas proposé
+  gros_mouvement: 1.0                # réveil si le prix a bougé d'une agitation depuis son dernier regard
+
+monde:
+  challenge_jours: 61                # un challenge = 2 mois de calendrier
+  echauffement_jours: 40             # historique minimum avant le départ d'un compte
+  frais_stop_glissement: 1.0         # un stop paie en plus 1 demi-frais de glissement (mesuré : +0,5 fiche)
+  punition_mur: 20.0                 # comme les écoles précédentes (ecole/classe.py)
+  bonus_reussite: 5.0
+
+arbre:
+  # L'ARBRE HYPERNOVA (chef de projet, 16/10) : un seul cœur qui bat en continu ; des BRANCHES (lignées) apprennent à
+  # tour de rôle ; une génération = chaque branche apprend un tour, puis toutes passent l'examen sur les MÊMES fenêtres ;
+  # la meilleure (la CIME) se DIVISE (copie + petite variation) quand une place est libre ; la plus faible est COUPÉE
+  # (archivée) si la cime la bat nettement (au-delà du bruit) ou, tous les `renouveler_tous`, si elle est derrière.
+  places: 4                          # branches vivantes en même temps (mesuré : voir le rapport d'essai)
+  jeunesse: 3                        # générations avant de pouvoir être coupée
+  coupe_force: 2.0                   # la cime la bat de plus de 2 incertitudes sur le dernier examen
+  renouveler_tous: 10                # toutes les 10 générations, la plus faible (derrière la cime) laisse sa place
+  bruit_division: 0.02               # variation des poids à la division (part de l'écart-type de chaque couche)
+  # tempéraments de départ (libres d'apprendre ensuite) : biais initiaux de leurs mains et vitesse d'apprentissage
+  temperaments:
+    - {nom: patiente, vitesse: 0.0003, curiosite: 0.003, garder: 2.0, limite: 0.5, delai: [-1.0, -0.5, 0.0, 0.5, 1.0], part: [0.0, 0.0, 0.0]}
+    - {nom: vise_loin, vitesse: 0.0003, curiosite: 0.003, garder: 1.5, limite: 0.3, delai: [-0.5, 0.0, 0.5, 0.5, 0.0], part: [1.0, 0.0, -0.5]}
+    - {nom: active, vitesse: 0.0003, curiosite: 0.005, garder: 0.8, limite: 0.0, delai: [0.5, 0.5, 0.0, -0.5, -1.0], part: [0.0, 0.0, 0.0]}
+    - {nom: chef, vitesse: 0.0002, curiosite: 0.003, garder: 1.5, limite: 1.0, delai: [-0.5, 0.0, 0.5, 0.5, 0.0], part: [-0.5, 0.0, 1.0]}
+
+ecole:
+  comptes: 512                       # comptes joués en même temps à l'école (par branche)
+  bougies_par_lecon: 256
+  lecons_par_generation: 8           # leçons de CHAQUE branche à chaque génération
+  marches_par_monde: 24              # marchés tirés au hasard pour le monde d'apprentissage d'une génération
+  monde_mois: 18                     # longueur de la fenêtre d'années tirée au hasard pour une génération
+  # Arbre greffé de la foule (17/10) : une génération sur deux, le monde commence après periodes.foule_debut, pour
+  # que la foule soit vraiment vue à l'école (sinon ~4 % des mondes). Sans greffe : aucun effet.
+  part_monde_foule: 0.5
+  part_miroir: 0.5                   # chance qu'un marché soit retourné (miroir) dans le monde d'apprentissage
+  marches_par_compte: [1, 4]
+  vitesse: 0.0003
+  epoques: 4
+  paquet: 1024
+  gamma: 0.9995
+  lam: 0.95
+  coupe: 0.2
+  curiosite: 0.003
+
+note:
+  # Objectif du chef de projet (16/10) : 8 à 10 %/mois, passer le challenge +10 % VITE sans toucher les murs.
+  # Note d'un challenge = réussi x (bonus_reussite + bonus_vitesse x jours restants / 61)
+  #                       - punition_mur x mur - punition_inactif x inactif
+  #                       + (gain %/mois - gain %/mois de son JUMEAU au hasard), borné à +- plafond_gain_mois
+  #                       - 0,5 x (baisse max - baisse_toleree)
+  # Le jumeau fait les mêmes gestes (même taille, même type d'ordre, même moment) avec le SENS tiré à pile ou face :
+  # un gain qui ne bat pas le jumeau ne compte pas (garde-fou anti-casino).
+  bonus_reussite: 5.0
+  bonus_vitesse: 5.0
+  punition_mur: 10.0
+  punition_inactif: 5.0
+  plafond_gain_mois: 10.0
+  baisse_toleree: 6.0
+
+selection:
+  pas_jours: 30                      # un challenge de sélection commence tous les 30 jours, dans chaque panier
+  seuil_bruit: 2.0                   # promotion si (candidat - champion) > 2 incertitudes (mêmes fenêtres)
+  trades_mois_min: 1.0               # garde-fou anti-paralysie (activité minimale)
+  inactifs_max_pct: 20.0
+  murs_max_pct: 30.0                 # garde-fou anti-casino
+  taille_panier: 4
+
+gardefous:
+  fenetre_lecons: 8
+  position_min_pct: 1.0              # moins de 1 % du temps en position sur 8 leçons = paralysie
+  murs_max_par_lecon_pour_512: 8.0   # plus de 8 murs par leçon (pour 512 comptes) en moyenne = joueur
+
+rapports:
+  rapport_tous: 50
+  telephone_tous: 100

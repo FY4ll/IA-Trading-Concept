@@ -1,0 +1,50 @@
+# Profil FTMO -- Challenge 2 étapes. Chiffres vérifiés (18/09) contre les
+# règles FTMO publiées, pas de mémoire -- voir academy.ftmo.com/lesson/
+# maximum-daily-loss/ et ftmo.com/en/trading-objectives/.
+#
+# IMPORTANT : max_risk_pct (1%) est une RECOMMANDATION de FTMO, PAS une
+# règle qui fait échouer le compte -- FTMO n'impose aucune limite par trade.
+# Les règles réellement CONTRAIGNANTES sont daily_loss et total_drawdown
+# ci-dessous. Le 1% est repris ici comme bonne pratique de gestion de
+# risque, pour éviter d'approcher les limites réelles en 2-3 trades.
+name: "FTMO — Challenge 2 étapes"
+
+per_trade:
+  max_risk_pct: 0.01
+
+daily_loss:
+  enabled: true
+  max_pct: 0.05                    # RÈGLE FTMO ENFORCÉE -- 5% du capital initial
+  basis: "equity"                   # évalué en continu, positions flottantes incluses (pas juste le réalisé)
+  reset_time_local: "00:00"         # minuit heure de la firme (pas UTC figé -- voir reset_timezone)
+  reset_timezone: "Europe/Prague"   # CE(S)T -- zoneinfo gère automatiquement hiver/été
+
+total_drawdown:
+  enabled: true
+  max_pct: 0.10                     # RÈGLE FTMO ENFORCÉE -- 10% du capital initial
+  mode: "static"                    # 2-Step = plancher FIXE depuis le capital initial, ne bouge jamais
+
+# COORDINATION INTER-STYLES (19/09) : selon une source, FTMO autoriserait
+# explicitement le hedging (positions BUY/SELL simultanées) -- mais ce
+# n'est PAS vérifié avec la même rigueur que daily_loss/total_drawdown
+# ci-dessus (contre la documentation FTMO publiée). Posture PRUDENTE par
+# défaut ici (coordination désactivée = hedging possible, comportement
+# actuel) tant que ce point précis n'est pas confirmé pour le type de
+# challenge visé -- à vérifier avant d'éditer, voir academy.ftmo.com pour
+# la règle exacte, ou passer à "priority_by_score" si le hedging doit
+# explicitement être évité par choix indépendant de la règle FTMO elle-même.
+conflict_resolution:
+  mode: "disabled"
+
+# PLAFOND D'EXPOSITION CUMULÉE (19/09) : activé ici AUSSI, même si ce
+# profil laisse la coordination désactivée -- les deux garde-fous sont
+# indépendants, et le pire cas du budget dynamique (plusieurs styles
+# D'ACCORD sur la même direction) n'est justement pas un conflit, donc la
+# coordination ne le couvre pas. Avec max_risk_pct à 1%, ce pire cas monte
+# à ~2.28% de risque simultané ; plafonné ici à 2.5%, soit la moitié de la
+# règle FTMO vraiment contraignante (daily_loss 5%), pour qu'une série de
+# stops touchés le même jour ne puisse pas à elle seule faire échouer le
+# challenge. À revoir avant tout challenge réel.
+cumulative_exposure:
+  enabled: true
+  max_pct: 0.025

@@ -1,0 +1,92 @@
+{
+ "style": "H1",
+ "generation": 176,
+ "jumeaux": 4,
+ "fenetre_debut": "2018-02-14",
+ "metrics_meta": {
+  "total_return": 0.23901496251126234,
+  "sharpe": 3.9960035843152477,
+  "max_drawdown": 0.05302554576342407,
+  "win_rate": 0.5848214285714286,
+  "profit_factor": 4.097686034274784,
+  "n_trades": 224,
+  "stress_windows": []
+ },
+ "periodes": [
+  {
+   "periode": "jamais vue : avant sa fenêtre",
+   "debut": "2016-01-01",
+   "fin": "2018-02-14",
+   "mois": 26,
+   "agent_pct_mois": 1.2193084881482912,
+   "jumeaux_pct_mois": [
+    1.4174789172125852,
+    1.0126155538524377,
+    1.356469246471119,
+    1.2576931019431052
+   ],
+   "trades": 45,
+   "part_achats_pct": 73.33333333333333,
+   "or_variation_pct": 25.137105498330282,
+   "comparaison": {
+    "avantage": -0.04175571672152046,
+    "incertitude": 0.13844296106385012,
+    "force": -0.30160953219039177,
+    "gain_ia": 1.2193084881482912,
+    "gain_jumeau": 1.2610642048698115,
+    "mesures": 26,
+    "net": false
+   }
+  },
+  {
+   "periode": "déjà vue : sa fenêtre (apprentissage 70 % + validation 30 %)",
+   "debut": "2018-02-14",
+   "fin": "2026-09-17",
+   "mois": 104,
+   "agent_pct_mois": 1.1332459127960846,
+   "jumeaux_pct_mois": [
+    0.8970544619764111,
+    0.9058646407248633,
+    1.0552281264550043,
+    0.8973249105027151
+   ],
+   "trades": 416,
+   "part_achats_pct": 83.65384615384616,
+   "or_variation_pct": 220.77333874129658,
+   "comparaison": {
+    "avantage": 0.19437787788133598,
+    "incertitude": 0.0740427917904101,
+    "force": 2.6252100060131918,
+    "gain_ia": 1.1332459127960846,
+    "gain_jumeau": 0.9388680349147486,
+    "mesures": 104,
+    "net": true
+   }
+  },
+  {
+   "periode": "jamais vue : après le 17/09/2026",
+   "debut": "2026-09-17",
+   "fin": "2026-10-13",
+   "mois": 2,
+   "agent_pct_mois": -0.24806354658258867,
+   "jumeaux_pct_mois": [
+    0.018725530127594592,
+    -0.23443629614985362,
+    0.46987921333540017,
+    0.4681238407803323
+   ],
+   "trades": 5,
+   "part_achats_pct": 20.0,
+   "or_variation_pct": -2.086534288830766,
+   "comparaison": {
+    "avantage": -0.42863661860595703,
+    "incertitude": 0.459139074696338,
+    "force": -0.9335659764733496,
+    "gain_ia": -0.24806354658258867,
+    "gain_jumeau": 0.18057307202336836,
+    "mesures": 2,
+    "net": false
+   }
+  }
+ ]
+}

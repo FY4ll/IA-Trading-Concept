@@ -1,0 +1,67 @@
+{
+ "style": "H4",
+ "generation": 65,
+ "jumeaux": 6,
+ "lockbox_debut": "2023-06-01",
+ "lockbox_meta": null,
+ "periodes": [
+  {
+   "periode": "déjà vue : apprentissage + validation",
+   "debut": "2010-01-01",
+   "fin": "2023-05-18",
+   "mois": 161,
+   "agent_pct_mois": 0.058275102692719585,
+   "jumeaux_pct_mois": [
+    -0.009714819494028196,
+    -0.06800791957187304,
+    -0.0674328391986614,
+    -0.07303746595081956,
+    -0.06807990622044711,
+    -0.03265626050024566
+   ],
+   "agent_pire_mois": -2.41746260025818,
+   "trades": 326,
+   "trades_jumeaux_moyen": 351.5,
+   "part_achats_pct": 100.0,
+   "or_variation_pct": 79.17239746053724,
+   "comparaison": {
+    "avantage": 0.11142997118206542,
+    "incertitude": 0.042563332375652345,
+    "force": 2.617980429695094,
+    "gain_ia": 0.058275102692719585,
+    "gain_jumeau": -0.05315486848934583,
+    "mesures": 161,
+    "net": true
+   }
+  },
+  {
+   "periode": "lockbox (après la date de coupure ; contaminée si la porte lockbox a servi)",
+   "debut": "2023-06-01",
+   "fin": "2026-10-13",
+   "mois": 41,
+   "agent_pct_mois": 0.0,
+   "jumeaux_pct_mois": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "agent_pire_mois": 0.0,
+   "trades": 0,
+   "trades_jumeaux_moyen": 0.0,
+   "part_achats_pct": null,
+   "or_variation_pct": 112.32406366517287,
+   "comparaison": {
+    "avantage": 0.0,
+    "incertitude": 0.0,
+    "force": 0.0,
+    "gain_ia": 0.0,
+    "gain_jumeau": 0.0,
+    "mesures": 41,
+    "net": false
+   }
+  }
+ ]
+}

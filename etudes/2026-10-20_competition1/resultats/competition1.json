@@ -1,0 +1,497 @@
+{
+ "indices": {
+  "elan_journee|USA500IDXUSD": {
+   "recherche": {
+    "trades": 1393,
+    "achats_pct": 53.12275664034458,
+    "gain_moyen_dollars": -30.05860792862712,
+    "gain_pct_mois": -0.4601279213689842,
+    "gagnants_pct": 38.621679827709976,
+    "gain_pct_mois_frais_x1_5": -0.6556265673519328,
+    "pire_jour_pct": -1.16944607124864,
+    "pire_baisse_pct": 41.91448548230895,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": -0.06913062940308728,
+     "incertitude": 0.07291087848799346,
+     "force": -0.9481524682831974
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -0.600590360447092,
+     "incertitude": 0.10572262505352789,
+     "force": -5.680812031890148
+    }
+   },
+   "validation": {
+    "trades": 773,
+    "achats_pct": 55.75679172056921,
+    "gain_moyen_dollars": -20.551535489899138,
+    "gain_pct_mois": -0.3309653527852508,
+    "gagnants_pct": 44.89003880983182,
+    "gain_pct_mois_frais_x1_5": -0.40934638409653257,
+    "pire_jour_pct": -1.036051802570671,
+    "pire_baisse_pct": 20.89752647473815,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": -0.17420329016268724,
+     "incertitude": 0.13890086135358237,
+     "force": -1.254155578770962
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -0.405732355543198,
+     "incertitude": 0.18544545024031336,
+     "force": -2.187879805179481
+    }
+   },
+   "total": {
+    "trades": 2166,
+    "achats_pct": 54.06278855032317,
+    "gain_moyen_dollars": -26.665733046292527,
+    "gain_pct_mois": -0.4155250199875512,
+    "gagnants_pct": 40.85872576177285,
+    "gain_pct_mois_frais_x1_5": -0.5705801731342406,
+    "pire_jour_pct": -1.16944607124864,
+    "pire_baisse_pct": 58.68477825978755,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": -0.10541471369417216,
+     "incertitude": 0.06750501119439659,
+     "force": -1.5615835303042267
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -0.5403842865574167,
+     "incertitude": 0.09475471605890246,
+     "force": -5.702980379588675
+    }
+   }
+  },
+  "elan_journee|USATECHIDXUSD": {
+   "recherche": {
+    "trades": 1413,
+    "achats_pct": 54.70629865534325,
+    "gain_moyen_dollars": -28.375151426448017,
+    "gain_pct_mois": -0.44059438423704456,
+    "gagnants_pct": 40.410474168435954,
+    "gain_pct_mois_frais_x1_5": -0.6839827619995928,
+    "pire_jour_pct": -1.1637315591808506,
+    "pire_baisse_pct": 40.20716147265197,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": 0.04618237128805228,
+     "incertitude": 0.0692288377002937,
+     "force": 0.6670973083209276
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -0.5829388570016332,
+     "incertitude": 0.11355520742947257,
+     "force": -5.133528177152842
+    }
+   },
+   "validation": {
+    "trades": 773,
+    "achats_pct": 58.86157826649418,
+    "gain_moyen_dollars": -16.17943514136696,
+    "gain_pct_mois": -0.2605563200890971,
+    "gagnants_pct": 45.53686934023286,
+    "gain_pct_mois_frais_x1_5": -0.3206809064249664,
+    "pire_jour_pct": -0.9118804885175459,
+    "pire_baisse_pct": 17.974393414302583,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": -0.14030714741735842,
+     "incertitude": 0.13590055286219796,
+     "force": -1.0324251407544214
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -0.4032246859086015,
+     "incertitude": 0.18550326493451924,
+     "force": -2.1736797249953295
+    }
+   },
+   "total": {
+    "trades": 2186,
+    "achats_pct": 56.17566331198536,
+    "gain_moyen_dollars": -24.06257654613345,
+    "gain_pct_mois": -0.3784229664017822,
+    "gagnants_pct": 42.22323879231473,
+    "gain_pct_mois_frais_x1_5": -0.5585260061177074,
+    "pire_jour_pct": -1.1637315591808506,
+    "pire_baisse_pct": 53.03313739815012,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": -0.018216886969931265,
+     "incertitude": 0.0653864624241026,
+     "force": -0.27860334226028105
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -0.5257740500844208,
+     "incertitude": 0.0991981575757794,
+     "force": -5.300240074345854
+    }
+   }
+  },
+  "elan_journee|USA30IDXUSD": {
+   "recherche": {
+    "trades": 1144,
+    "achats_pct": 52.18531468531469,
+    "gain_moyen_dollars": -21.875944765152706,
+    "gain_pct_mois": -0.342823024812804,
+    "gagnants_pct": 41.60839160839161,
+    "gain_pct_mois_frais_x1_5": -0.441976090663198,
+    "pire_jour_pct": -1.3549233615446166,
+    "pire_baisse_pct": 25.254336490599037,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": -0.14451689311201604,
+     "incertitude": 0.07645560099024909,
+     "force": -1.890206750587799
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -0.41531157222679715,
+     "incertitude": 0.10523590270278735,
+     "force": -3.9464817762787807
+    }
+   },
+   "validation": {
+    "trades": 772,
+    "achats_pct": 53.49740932642487,
+    "gain_moyen_dollars": -19.475362292394596,
+    "gain_pct_mois": -0.31322874353601315,
+    "gagnants_pct": 46.24352331606217,
+    "gain_pct_mois_frais_x1_5": -0.3587294572991139,
+    "pire_jour_pct": -1.0075813945875582,
+    "pire_baisse_pct": 20.270113328235865,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": -0.22222731600981152,
+     "incertitude": 0.131406076399544,
+     "force": -1.6911494665902884
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -0.28990468850637113,
+     "incertitude": 0.18627381614917182,
+     "force": -1.5563362285669267
+    }
+   },
+   "total": {
+    "trades": 1916,
+    "achats_pct": 52.71398747390397,
+    "gain_moyen_dollars": -20.90869545984516,
+    "gain_pct_mois": -0.331083144636887,
+    "gagnants_pct": 43.47599164926931,
+    "gain_pct_mois_frais_x1_5": -0.4089526327997596,
+    "pire_jour_pct": -1.3549233615446166,
+    "pire_baisse_pct": 41.04878055435272,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": -0.17534416831114152,
+     "incertitude": 0.06936062751178967,
+     "force": -2.5280072369780267
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -0.3730408624823015,
+     "incertitude": 0.09684599363295675,
+     "force": -3.8518977242994126
+    }
+   }
+  },
+  "trou_ouverture|USA500IDXUSD": {
+   "recherche": {
+    "trades": 990,
+    "achats_pct": 42.62626262626263,
+    "gain_moyen_dollars": -61.67058879585529,
+    "gain_pct_mois": -0.6709217901966674,
+    "gagnants_pct": 44.44444444444444,
+    "gain_pct_mois_frais_x1_5": -0.8105133211461976,
+    "pire_jour_pct": -4.531858270499313,
+    "pire_baisse_pct": 62.78575387411727,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": -0.39173872829760703,
+     "incertitude": 0.20376839428129634,
+     "force": -1.9224705071622792
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -1.0555807859397413,
+     "incertitude": 0.26306676341022006,
+     "force": -4.012596544907095
+    }
+   },
+   "validation": {
+    "trades": 599,
+    "achats_pct": 43.906510851419036,
+    "gain_moyen_dollars": 5.915527136581657,
+    "gain_pct_mois": 0.07382084905859189,
+    "gagnants_pct": 47.57929883138564,
+    "gain_pct_mois_frais_x1_5": 0.010095973027438383,
+    "pire_jour_pct": -2.13720269278427,
+    "pire_baisse_pct": 12.780853796151256,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": 0.2012706011208989,
+     "incertitude": 0.29768703337150504,
+     "force": 0.6761147734295798
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -0.08324941340848917,
+     "incertitude": 0.4393464680618681,
+     "force": -0.18948465382169888
+    }
+   },
+   "total": {
+    "trades": 1589,
+    "achats_pct": 43.10887350534928,
+    "gain_moyen_dollars": -36.19287737764903,
+    "gain_pct_mois": -0.41374447592146996,
+    "gagnants_pct": 45.626179987413465,
+    "gain_pct_mois_frais_x1_5": -0.5271374497768844,
+    "pire_jour_pct": -4.531858270499313,
+    "pire_baisse_pct": 69.25327062151737,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": -0.18695852821064102,
+     "incertitude": 0.16948921552159255,
+     "force": -1.1030703495516676
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -0.7233661876091007,
+     "incertitude": 0.23370277164929765,
+     "force": -3.0952400885283837
+    }
+   }
+  },
+  "trou_ouverture|USATECHIDXUSD": {
+   "recherche": {
+    "trades": 1031,
+    "achats_pct": 40.83414161008729,
+    "gain_moyen_dollars": -39.51066258083723,
+    "gain_pct_mois": -0.44764278154772713,
+    "gagnants_pct": 46.84772065955383,
+    "gain_pct_mois_frais_x1_5": -0.6253906710975871,
+    "pire_jour_pct": -3.203303374585649,
+    "pire_baisse_pct": 44.02429914207462,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": -0.09214700244800757,
+     "incertitude": 0.19640099565742666,
+     "force": -0.46917787834810876
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -0.8352206047557519,
+     "incertitude": 0.2849408771157824,
+     "force": -2.9312066882435044
+    }
+   },
+   "validation": {
+    "trades": 584,
+    "achats_pct": 44.52054794520548,
+    "gain_moyen_dollars": -4.2967832560135095,
+    "gain_pct_mois": -0.05227752961483105,
+    "gagnants_pct": 47.43150684931507,
+    "gain_pct_mois_frais_x1_5": -0.09971849664874928,
+    "pire_jour_pct": -1.8131881400575627,
+    "pire_baisse_pct": 15.242030291934134,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": 0.04260440445300534,
+     "incertitude": 0.27662460021378266,
+     "force": 0.1540152409441516
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -0.33900743594423455,
+     "incertitude": 0.3916348502709578,
+     "force": -0.8656212175951342
+    }
+   },
+   "total": {
+    "trades": 1615,
+    "achats_pct": 42.1671826625387,
+    "gain_moyen_dollars": -26.77697494882667,
+    "gain_pct_mois": -0.31111377368600773,
+    "gagnants_pct": 47.05882352941176,
+    "gain_pct_mois_frais_x1_5": -0.44386358927352787,
+    "pire_jour_pct": -3.203303374585649,
+    "pire_baisse_pct": 53.5237141719168,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": -0.04561414251096715,
+     "incertitude": 0.1596834573479627,
+     "force": -0.2856535252212781
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -0.6644688433383964,
+     "incertitude": 0.2309389984591007,
+     "force": -2.8772483113373934
+    }
+   }
+  },
+  "trou_ouverture|USA30IDXUSD": {
+   "recherche": {
+    "trades": 870,
+    "achats_pct": 43.5632183908046,
+    "gain_moyen_dollars": -27.568483879675355,
+    "gain_pct_mois": -0.3331191802127439,
+    "gagnants_pct": 45.97701149425287,
+    "gain_pct_mois_frais_x1_5": -0.4108841425500975,
+    "pire_jour_pct": -3.6298498386572864,
+    "pire_baisse_pct": 33.04971632442648,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": -0.17758925553803662,
+     "incertitude": 0.2246738523634293,
+     "force": -0.7904313460151594
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -0.5379838779184526,
+     "incertitude": 0.3156997127498301,
+     "force": -1.7040999918323243
+    }
+   },
+   "validation": {
+    "trades": 593,
+    "achats_pct": 44.68802698145025,
+    "gain_moyen_dollars": 11.293348382377673,
+    "gain_pct_mois": 0.13951990814062412,
+    "gagnants_pct": 48.566610455311974,
+    "gain_pct_mois_frais_x1_5": 0.10368868160971617,
+    "pire_jour_pct": -2.3179707631472364,
+    "pire_baisse_pct": 10.819119668097093,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": 0.21118236120244008,
+     "incertitude": 0.3021459806817521,
+     "force": 0.6989414875747653
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": 0.1928897283622699,
+     "incertitude": 0.45527123309300666,
+     "force": 0.42368090566984
+    }
+   },
+   "total": {
+    "trades": 1463,
+    "achats_pct": 44.01913875598086,
+    "gain_moyen_dollars": -11.816558704420776,
+    "gain_pct_mois": -0.1440635448713967,
+    "gagnants_pct": 47.02665755297335,
+    "gain_pct_mois_frais_x1_5": -0.20505501288617203,
+    "pire_jour_pct": -3.6298498386572864,
+    "pire_baisse_pct": 33.04971632442648,
+    "contre_pile_ou_face": {
+     "avantage_pct_mois": -0.02208060884184592,
+     "incertitude": 0.18110178507985786,
+     "force": -0.12192375040427875
+    },
+    "contre_acheteur_risque_egal": {
+     "avantage_pct_mois": -0.2514601846389925,
+     "incertitude": 0.26379274427544946,
+     "force": -0.9532490566776946
+    }
+   }
+  }
+ },
+ "devises": {
+  "recherche": {
+   "trades": 1652,
+   "achats_pct": 50.0,
+   "gain_moyen_dollars": -9.811775790130094,
+   "gain_pct_mois": -0.04221107709712214,
+   "gagnants_pct": 48.18401937046005,
+   "gain_pct_mois_frais_x1_5": -0.07551833914732395,
+   "pire_jour_pct": -4.106565358875436,
+   "pire_baisse_pct": 23.280825867370655,
+   "semaines": 413,
+   "contre_tirage_des_devises": {
+    "avantage_pct_mois": 0.3555376221708153,
+    "incertitude": 0.25291693796612336,
+    "force": 1.4057485632632376
+   },
+   "contre_pile_ou_face": {
+    "avantage_pct_mois": 0.3495681619804684,
+    "incertitude": 0.2525916826426263,
+    "force": 1.3839258613873169
+   },
+   "part_par_devise_dollars": {
+    "AUDUSD": 2167.1,
+    "EURUSD": 7108.0,
+    "GBPUSD": 7454.6,
+    "NZDUSD": -4531.4,
+    "USDCAD": -4841.0,
+    "USDCHF": 27375.8,
+    "USDJPY": -601.4
+   }
+  },
+  "validation": {
+   "trades": 812,
+   "achats_pct": 50.0,
+   "gain_moyen_dollars": -46.216276149531325,
+   "gain_pct_mois": -0.19545633454905956,
+   "gagnants_pct": 48.76847290640394,
+   "gain_pct_mois_frais_x1_5": -0.22726181574703108,
+   "pire_jour_pct": -3.4391329188361297,
+   "pire_baisse_pct": 25.849268489294598,
+   "semaines": 203,
+   "contre_tirage_des_devises": {
+    "avantage_pct_mois": 0.1795397816566938,
+    "incertitude": 0.32673716481668175,
+    "force": 0.5494929900534146
+   },
+   "contre_pile_ou_face": {
+    "avantage_pct_mois": 0.1834733122505018,
+    "incertitude": 0.326997698882184,
+    "force": 0.5610844139811716
+   },
+   "part_par_devise_dollars": {
+    "AUDUSD": 1859.5,
+    "EURUSD": 12238.9,
+    "GBPUSD": -5967.1,
+    "NZDUSD": -2686.5,
+    "USDCAD": -1565.6,
+    "USDCHF": 10348.4,
+    "USDJPY": -5609.7
+   }
+  },
+  "total": {
+   "trades": 2464,
+   "achats_pct": 50.0,
+   "gain_moyen_dollars": -21.80871340856913,
+   "gain_pct_mois": -0.09329282958110124,
+   "gagnants_pct": 48.37662337662338,
+   "gain_pct_mois_frais_x1_5": -0.126099498013893,
+   "pire_jour_pct": -4.106565358875436,
+   "pire_baisse_pct": 25.84926848929461,
+   "semaines": 616,
+   "contre_tirage_des_devises": {
+    "avantage_pct_mois": 0.29687167533277475,
+    "incertitude": 0.20018617852946854,
+    "force": 1.4829778834559928
+   },
+   "contre_pile_ou_face": {
+    "avantage_pct_mois": 0.2942032120704796,
+    "incertitude": 0.2000377002998943,
+    "force": 1.470738823878766
+   },
+   "part_par_devise_dollars": {
+    "AUDUSD": 4026.7,
+    "EURUSD": 19346.8,
+    "GBPUSD": 1487.5,
+    "NZDUSD": -7217.9,
+    "USDCAD": -6406.7,
+    "USDCHF": 37724.2,
+    "USDJPY": -6211.1
+   }
+  }
+ },
+ "criteres": {
+  "elan_journee": {
+   "1_gain_positif_recherche_et_validation": false,
+   "2_bat_le_juge_cle": false,
+   "3_bat_acheteur_risque_egal": false,
+   "4_robuste": false,
+   "5_frais_x1_5": false,
+   "6_au_moins_100_trades": true,
+   "CANDIDATE": false
+  },
+  "trou_ouverture": {
+   "1_gain_positif_recherche_et_validation": false,
+   "2_bat_le_juge_cle": false,
+   "3_bat_acheteur_risque_egal": false,
+   "4_robuste": false,
+   "5_frais_x1_5": false,
+   "6_au_moins_100_trades": true,
+   "CANDIDATE": false
+  },
+  "retournement_devises": {
+   "1_gain_positif_recherche_et_validation": false,
+   "2_bat_le_juge_cle": false,
+   "3_bat_pile_ou_face": true,
+   "4_robuste_5_devises_sur_7": false,
+   "5_frais_x1_5": false,
+   "6_au_moins_100_trades": true,
+   "CANDIDATE": false
+  }
+ }
+}

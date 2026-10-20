@@ -1,0 +1,163 @@
+{
+ "style": "AUREX",
+ "generation": 253,
+ "jumeaux": 6,
+ "lockbox_debut": "2023-06-01",
+ "lockbox_meta": {
+  "sharpe": 1.0773289679123315,
+  "max_drawdown": 0.12099839624962311,
+  "total_return": 0.4265235636940967,
+  "n_trades": 812,
+  "profit_factor": 1.2249201466316098,
+  "n_bars": 76446,
+  "lockbox_start": "2023-06-01",
+  "thirds_returns": [
+   0.09962223919857105,
+   0.19599988686324865,
+   0.08468665411125276
+  ],
+  "prop_firm": {
+   "n_days": 836,
+   "worst_day": -0.01719899469857311,
+   "days_below_2pct": 0,
+   "max_drawdown": -0.10958323887699872,
+   "total_return": 0.4274078815474749,
+   "monthly_median": 0.011301699729701964,
+   "months_ge_8pct": 0.0,
+   "challenge_pass": 0.3965,
+   "challenge_daily_breach": 0.0,
+   "challenge_total_breach": 0.049,
+   "verification_pass": 0.695
+  },
+  "baselines": {
+   "buy_hold": {
+    "total_return": 1.1236085508560025,
+    "sharpe": 0.5922484129283591,
+    "max_drawdown": 0.2915304606240713,
+    "prop_firm": {
+     "n_days": 836,
+     "worst_day": -0.09022875209224479,
+     "days_below_2pct": 37,
+     "max_drawdown": -0.26569223893056704,
+     "total_return": 1.1089814908465696,
+     "monthly_median": 0.022606929097886086,
+     "months_ge_8pct": 0.07692307692307693,
+     "challenge_pass": 0.631,
+     "challenge_daily_breach": 0.112,
+     "challenge_total_breach": 0.152,
+     "verification_pass": 0.788
+    }
+   },
+   "trend_sma20_50": {
+    "total_return": -0.44691894488932926,
+    "sharpe": -0.3658851298702594,
+    "max_drawdown": 0.4582208759388181,
+    "prop_firm": {
+     "n_days": 836,
+     "worst_day": -0.15178603247151068,
+     "days_below_2pct": 32,
+     "max_drawdown": -0.4535774463625374,
+     "total_return": -0.4475337417373453,
+     "monthly_median": -0.02139523583316627,
+     "months_ge_8pct": 0.07692307692307693,
+     "challenge_pass": 0.224,
+     "challenge_daily_breach": 0.271,
+     "challenge_total_breach": 0.379,
+     "verification_pass": 0.434
+    }
+   }
+  },
+  "stress_sharpe": 0.6008026277853615,
+  "stress_return": 0.209465245309572,
+  "stress_cost_multiplier": 2.0
+ },
+ "periodes": [
+  {
+   "periode": "jamais vue : avant sa fenêtre d'historique",
+   "debut": "2010-01-01",
+   "fin": "2018-01-01",
+   "mois": 96,
+   "agent_pct_mois": -0.373092115304727,
+   "jumeaux_pct_mois": [
+    -0.854230715731472,
+    -0.6894490489448676,
+    -0.7868412561266293,
+    -0.790837232716675,
+    -0.6891381160504229,
+    -0.7563485047038485
+   ],
+   "agent_pire_mois": -7.012379647547029,
+   "trades": 1338,
+   "trades_jumeaux_moyen": 2030.1666666666667,
+   "part_achats_pct": 99.77578475336323,
+   "or_variation_pct": 19.108286080117054,
+   "comparaison": {
+    "avantage": 0.3880486970742589,
+    "incertitude": 0.09065934309490055,
+    "force": 4.280294604253381,
+    "gain_ia": -0.373092115304727,
+    "gain_jumeau": -0.7611408123789857,
+    "mesures": 96,
+    "net": false
+   }
+  },
+  {
+   "periode": "déjà vue : sa fenêtre d'historique (apprentissage + validation)",
+   "debut": "2018-01-01",
+   "fin": "2023-05-30",
+   "mois": 65,
+   "agent_pct_mois": -0.003219050958547598,
+   "jumeaux_pct_mois": [
+    -0.04413619119383163,
+    -0.11185041771544005,
+    -0.050350372285008375,
+    -0.11403764147585008,
+    0.0584564917597252,
+    -0.23481951714018737
+   ],
+   "agent_pire_mois": -7.250894312560153,
+   "trades": 730,
+   "trades_jumeaux_moyen": 1100.5,
+   "part_achats_pct": 97.12328767123287,
+   "or_variation_pct": 47.816690594739896,
+   "comparaison": {
+    "avantage": 0.07957055704988442,
+    "incertitude": 0.12171956129820279,
+    "force": 0.6537203733009124,
+    "gain_ia": -0.003219050958547598,
+    "gain_jumeau": -0.08278960800843198,
+    "mesures": 65,
+    "net": false
+   }
+  },
+  {
+   "periode": "lockbox (après la date de coupure ; contaminée si la porte lockbox a servi)",
+   "debut": "2023-06-01",
+   "fin": "2026-10-13",
+   "mois": 41,
+   "agent_pct_mois": 0.8614915904692074,
+   "jumeaux_pct_mois": [
+    0.60643152220317,
+    0.6784614981788263,
+    0.4261981086439987,
+    0.6304011114599299,
+    0.561341667629145,
+    0.7329060202471878
+   ],
+   "agent_pire_mois": -6.1533915605703875,
+   "trades": 401,
+   "trades_jumeaux_moyen": 643.3333333333334,
+   "part_achats_pct": 100.0,
+   "or_variation_pct": 112.44487671735124,
+   "comparaison": {
+    "avantage": 0.25553493574216457,
+    "incertitude": 0.1289167223091159,
+    "force": 1.9821705917207864,
+    "gain_ia": 0.8614915904692074,
+    "gain_jumeau": 0.6059566547270431,
+    "mesures": 41,
+    "net": false
+   }
+  }
+ ]
+}

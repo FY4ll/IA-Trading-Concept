@@ -1,0 +1,18 @@
+# Test_IA — dépendances du code actif (core/, cerveau/, collapsar/, etudes/)
+# Testé à l'origine avec Python 3.11 sous Windows.
+# PyTorch avec CUDA : installer d'abord la version adaptée à votre carte depuis https://pytorch.org/get-started/locally/
+
+numpy>=1.26,<3
+pandas>=2.1
+numba>=0.59
+scipy>=1.11
+scikit-learn>=1.3
+torch>=2.2
+pyyaml>=6.0
+requests>=2.31
+psutil>=5.9
+matplotlib>=3.8
+pytest>=8.0
+
+# Connexion MetaTrader 5 (démo) : Windows uniquement
+MetaTrader5>=5.0.45; sys_platform == "win32"

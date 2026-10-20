@@ -1,0 +1,10 @@
+# Dépendances supplémentaires des générations archivées (archives/, runs/, aurexis/)
+# Ce code est conservé pour mémoire ; il n'est pas garanti exécutable.
+-r requirements.txt
+stable-baselines3>=2.2
+gymnasium>=0.29
+ta>=0.11
+transformers>=4.36
+vaderSentiment>=3.3
+feedparser>=6.0
+pillow>=10.0

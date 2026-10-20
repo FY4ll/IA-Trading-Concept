@@ -1,0 +1,83 @@
+{
+ "style": "H1T",
+ "generation": 229,
+ "jumeaux": 6,
+ "lockbox_debut": "2023-06-01",
+ "lockbox_meta": {
+  "sharpe": 0.6700637249529245,
+  "max_drawdown": 0.291855073228034,
+  "total_return": 0.37813417852203157,
+  "n_trades": 577,
+  "profit_factor": 1.2691502081914003,
+  "n_bars": 19631,
+  "lockbox_start": "2023-05-01",
+  "thirds_returns": [
+   0.021122082008409704,
+   0.4050198049018381,
+   -0.03942475647464294
+  ],
+  "stress_sharpe": 0.34432155009015963,
+  "stress_return": 0.15308261833977244,
+  "stress_cost_multiplier": 2.0
+ },
+ "periodes": [
+  {
+   "periode": "déjà vue : apprentissage + validation",
+   "debut": "2010-01-01",
+   "fin": "2023-05-26",
+   "mois": 161,
+   "agent_pct_mois": 0.4049047723239596,
+   "jumeaux_pct_mois": [
+    0.3156815888821357,
+    0.4846914785939424,
+    0.3875596303330353,
+    0.38466862598328294,
+    0.30046297588194004,
+    0.42443434936427293
+   ],
+   "agent_pire_mois": -9.431972191454463,
+   "trades": 649,
+   "trades_jumeaux_moyen": 562.3333333333334,
+   "part_achats_pct": 94.14483821263482,
+   "or_variation_pct": 77.88376321391699,
+   "comparaison": {
+    "avantage": 0.021988330817524538,
+    "incertitude": 0.09601469747496034,
+    "force": 0.22901005154194096,
+    "gain_ia": 0.4049047723239596,
+    "gain_jumeau": 0.382916441506435,
+    "mesures": 161,
+    "net": false
+   }
+  },
+  {
+   "periode": "lockbox (après la date de coupure ; contaminée si la porte lockbox a servi)",
+   "debut": "2023-06-01",
+   "fin": "2026-10-13",
+   "mois": 41,
+   "agent_pct_mois": 0.9929436129728431,
+   "jumeaux_pct_mois": [
+    0.7196010590841676,
+    0.6765892047627983,
+    0.14124380595250483,
+    0.39781920838918755,
+    1.332034085531812,
+    0.8706361216511088
+   ],
+   "agent_pire_mois": -9.415652536487507,
+   "trades": 473,
+   "trades_jumeaux_moyen": 378.0,
+   "part_achats_pct": 82.02959830866807,
+   "or_variation_pct": 112.29166772623475,
+   "comparaison": {
+    "avantage": 0.3032896987442465,
+    "incertitude": 0.30086309550808576,
+    "force": 1.0080654732082137,
+    "gain_ia": 0.9929436129728431,
+    "gain_jumeau": 0.6896539142285965,
+    "mesures": 41,
+    "net": false
+   }
+  }
+ ]
+}
