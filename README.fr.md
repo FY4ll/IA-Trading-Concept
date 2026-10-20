@@ -76,10 +76,16 @@ spectaculaire), frais de nuit oubliés sur 36 % des nuits, stop du jumeau décle
 | [`cerveau/`](cerveau/) | Architecture modulaire (perception, mesure, juges), portefeuille multi-marchés, simulateur de challenge |
 | [`etudes/`](etudes/) | Une étude = `PLAN_FIGE.md` + script + `resultats/` + `RAPPORT.md` ; registre unique des idées ; protocole de replay manuel |
 | [`usine/`](usine/) | Pipeline de recherche par rôles (journaliste, scientifique, travailleur, juge, manager, opérateur) |
-| [`collapsar/`](collapsar/) | 3e génération : préentraînement, école des marchés synthétiques, arbre, audits |
-| [`archive/magnetar/`](archive/magnetar/), [`archives/`](archives/), [`runs/`](runs/), [`aurexis/`](aurexis/) | Générations précédentes et leurs rapports (code archivé, pas toujours exécutable) |
 | [`docs/`](docs/) | Audit, architecture, historique, protocole, règles FTMO, sources des données |
-| `research_notes/`, `reports/` | Notes de recherche bibliographique |
+
+### La branche `archive`
+
+Pour garder `main` léger, les générations précédentes sont intactes sur la branche [`archive`](https://github.com/FY4ll/IA-Trading-Concept/tree/archive) :
+`collapsar/` (3e génération : préentraînement, marchés synthétiques, arbre de cerveaux, audits), `archive/magnetar/`
+(MAGNETAR, HYPERNOVA), `runs/`, `archives/`, `aurexis/` (premières générations), `atelier/`, `research_notes/` et
+`reports/` (notes bibliographiques). Ce code est conservé pour mémoire et ne s'exécute pas toujours. Les chemins vers
+ces dossiers dans la documentation et les rapports renvoient à cette branche. Dépendances en plus :
+`requirements-archives.txt`.
 
 ## Reprendre le projet
 
@@ -97,7 +103,7 @@ Environnement d'origine : Windows, Python 3.11, PyTorch CUDA, GTX 1060 6 Go, 16 
 ```bash
 python -m venv venv
 venv\Scripts\activate          # Linux / macOS : source venv/bin/activate
-pip install -r requirements.txt   # + requirements-archives.txt pour les anciennes générations
+pip install -r requirements.txt
 pytest              # tests/ tourne sans données ; les tests qui ont besoin des données sont « skipped »
 ```
 

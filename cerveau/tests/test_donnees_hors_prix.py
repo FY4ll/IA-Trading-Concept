@@ -105,7 +105,8 @@ def test_cftc_jamais_avant_metatrader(cftc):
     """2015-2023 : la date retenue n'est jamais AVANT la publication relevée par le calendrier de MetaTrader (rapport
     reconnu par sa valeur : position nette des non commerciaux sur l'euro, ancien rapport local), et lui est égale
     hors annonces officielles."""
-    from collapsar.donnees.calendrier import MT5_HISTOIRE, _lire_mt5
+    cal = pytest.importorskip("collapsar.donnees.calendrier")   # on the archive branch
+    MT5_HISTOIRE, _lire_mt5 = cal.MT5_HISTOIRE, cal._lire_mt5
     leg = []
     for an in range(2014, 2024):
         with zipfile.ZipFile(RACINE / "data" / "foule_devises" / "cftc_brut" / f"deacot{an}.zip") as z:

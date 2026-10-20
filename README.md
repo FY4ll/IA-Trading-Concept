@@ -86,7 +86,7 @@ git clone https://github.com/FY4ll/IA-Trading-Concept.git
 cd IA-Trading-Concept
 python -m venv venv
 venv\Scripts\activate            # Linux / macOS: source venv/bin/activate
-pip install -r requirements.txt  # + requirements-archives.txt for older generations
+pip install -r requirements.txt
 pytest                           # tests/ runs on synthetic data; tests needing market data are skipped
 ```
 
@@ -106,12 +106,18 @@ calendar). The simulator expects a `core/ftmo/conditions_ftmo.json` produced fro
 | [`cerveau/`](cerveau/) | Modular architecture (perception, measurement, judges), multi-market portfolio, challenge simulator |
 | [`etudes/`](etudes/) | One study = `PLAN_FIGE.md` + script + `resultats/` + `RAPPORT.md`; idea registry; manual replay protocol |
 | [`usine/`](usine/) | Role-based research pipeline (journalist, scientist, worker, judge, manager, operator) |
-| [`collapsar/`](collapsar/) | 3rd generation: pretraining, synthetic-market school, tree, audits |
-| [`archive/magnetar/`](archive/magnetar/), [`archives/`](archives/), [`runs/`](runs/), [`aurexis/`](aurexis/) | Earlier generations and their reports (archived, not always runnable) |
 | [`docs/`](docs/) | Audit, architecture, history, protocol, FTMO rules, data sources |
 | [`tests/`](tests/) | Tests that run without any data |
 
 Most documentation and code comments are in **French**. Translations are welcome.
+
+### The `archive` branch
+
+To keep `main` light, the earlier generations live on the [`archive`](https://github.com/FY4ll/IA-Trading-Concept/tree/archive) branch, untouched: `collapsar/`
+(3rd generation: pretraining, synthetic markets, tree of brains, audits), `archive/magnetar/` (MAGNETAR, HYPERNOVA),
+`runs/`, `archives/`, `aurexis/` (first generations), `atelier/`, `research_notes/` and `reports/` (literature notes).
+That code is kept as a record and is not always runnable. Paths to those folders in the docs and reports refer to
+that branch. Extra dependencies: `requirements-archives.txt`.
 
 ## Taking over the project
 

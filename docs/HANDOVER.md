@@ -23,13 +23,9 @@ code. Most code comments and reports are in French; the glossary at the end maps
 | `etudes/` | **active** | one folder per study (frozen plan, script, results, report) + the idea registry + manual replay protocol |
 | `tests/` | **active** | tests on synthetic data, no market data needed |
 | `usine/` | design only | role-based research pipeline (journalist, scientist, worker, judge, manager, operator); never ran a full batch |
-| `collapsar/` | archive, partly runnable | 3rd generation (pretraining, synthetic markets, tree of brains), audits, research tracks |
-| `archive/magnetar/` | archive | MAGNETAR and HYPERNOVA |
-| `runs/`, `archives/`, `aurexis/` | archive, not maintained | earlier generations; `aurexis` tests are known to be broken |
-| `docs/` | reference | audit, architecture, research history, validation protocol, verified FTMO rules, data sources |
-| `research_notes/`, `reports/` | reference | literature notes |
+| branch [`archive`](https://github.com/FY4ll/IA-Trading-Concept/tree/archive) | archive, not maintained | `collapsar/` (3rd generation), `archive/magnetar/` (MAGNETAR, HYPERNOVA), `runs/`, `archives/`, `aurexis/` (first generations; `aurexis` tests are known to be broken), `atelier/`, `research_notes/`, `reports/`. Paths to these folders in docs and reports refer to this branch |
 
-Rule of thumb: build on `core/` + `cerveau/` + `etudes/`. Read the rest, do not extend it.
+Rule of thumb: build on `core/` + `cerveau/` + `etudes/` (all on `main`). Read the `archive` branch, do not extend it.
 
 ## 3. Setting up the data
 
@@ -44,7 +40,8 @@ No market data is shipped. To run the data-dependent tests and the studies, prov
 
 Sources and links: `docs/SOURCES_DES_DONNEES.md`. Swaps use monthly 3-month interest rates in
 `data/taux/<CURRENCY>.csv`; `core/taux.py` downloads them from FRED with an API key read from the Run A config file
-(`fred.api_key` in `runs/20260919_envv2/run_config_A.yaml`, git-ignored). Create that file with your own free FRED key,
+(`fred.api_key` in `runs/20260919_envv2/run_config_A.yaml`, git-ignored; the folder only exists on the `archive` branch).
+Create that file with your own free FRED key,
 or place the CSV files yourself. Never commit a key.
 
 After setup, `pytest` should report fewer skipped tests. Tests that still skip need a dataset you did not provide.
@@ -66,10 +63,11 @@ The protocol in full: `docs/VALIDATION_PROTOCOL.md`. Good examples: `etudes/2026
 
 ## 5. Known issues
 
-- `aurexis/` tests fail (missing modules after a 2026-10-08 cleanup). Archived; do not fix unless you need it.
+- On the `archive` branch, `aurexis/` tests fail (missing modules after a 2026-10-08 cleanup). Do not fix unless you
+  need it.
 - The code of a third-party supply and demand indicator was removed for licensing reasons. Modules that imported it
-  (`cerveau/perception/detecteur.py`, several `collapsar/regarder/` and `collapsar/audit/` scripts, `archive/magnetar/
-  ecole_precision/structure.py`) do not run as is. Their reports remain valid as records.
+  (`cerveau/perception/detecteur.py` on `main`; several `collapsar/` and `archive/magnetar/` scripts on the `archive`
+  branch) do not run as is. Their reports remain valid as records.
 - Some archived scripts still contain the author's Windows paths, anonymised as `C:\Users\utilisateur\...`: adapt
   them or use relative paths.
 - `cerveau/` has no risk/veto layer yet: it is required before any live use of the brain.
